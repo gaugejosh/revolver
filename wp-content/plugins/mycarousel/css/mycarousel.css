@@ -1,0 +1,71 @@
+.fl {float: left;}
+
+.fr {float: right;}
+
+.lab1 {padding-left: 5px;padding-right: 10px;}
+
+.lab2 {padding-right: 5px;}
+
+.tb {width: 50px;}
+
+.mycrsl 			{position:relative}
+.mycarousel_wrapper {overflow: hidden;position: relative;max-width: 100%;height: auto;}
+
+.mycarousel {display:none;margin: 0px;padding: 0px;height: auto;width: 3000px;position: absolute;top: 0px;left: 0px;}
+
+.mycarousel div {max-width:100%; height:auto; float:left; position:relative; background-color:#fff; line-height:12px !important;}
+.mycarousel img {width:100%; height:auto;}
+.mycrsl a.prev, 
+.mycrsl a.next 			{background: url(../images/miscellaneous_sprite.png) no-repeat transparent; width: 45px; height: 50px; display: block; position: absolute; top: 35%; cursor: pointer; text-indent:-9999px;}
+.mycrsl a.prev 			{left:-2px; background-position:0 0;}
+.mycrsl a.prev:hover 	{background-position: 0 -50px;}
+.mycrsl a.prev.disabled {background-position: 0 -100px !important;}
+.mycrsl a.next 			{right:-1px; background-position:-50px 0;}
+.mycrsl a.next:hover 	{background-position: -50px -50px;}
+.mycrsl a.next.disabled {background-position: -50px -100px !important;}
+
+.mycrsl a.prev.disabled, 
+.mycrsl a.next.disabled {cursor:default;}
+
+.mycrsl a.prev_small, 
+.mycrsl a.next_small 			{background: url(../images/miscellaneous_sprite.png) no-repeat transparent;width: 30px;height: 28px;display: block;position: absolute;top: 35%;cursor: pointer;}
+.mycrsl a.prev_small 			{left:-12px; background-position: -7px -167px;}
+.mycrsl a.prev_small:hover		{background-position: -7px -197px;}
+.mycrsl a.prev_small.disabled	{background-position:-7px -227px !important;}
+.mycrsl a.next_small 			{right:-12px; background-position: -38px -167px;}
+.mycrsl a.next_small:hover 		{background-position:-38px -197px;}
+.mycrsl a.next_small.disabled 	{background-position:-38px -227px !important;}
+.mycrsl a.prev_small.disabled, 
+.mycrsl a.next_small.disabled 	{cursor: default;}
+.mycrsl a.prev_small span, 
+.mycrsl a.next_small span 		{display: none;}
+
+.mycrsl .pagination 			{text-align: center; margin:10px 0px;}
+.mycrsl .pagination:empty		{margin:0px;}
+.mycrsl .pagination a 			{background: url(../images/miscellaneous_sprite.png) 0 -300px no-repeat transparent;width: 15px;height: 15px;margin: 0 5px 0 0;display: inline-block;cursor: pointer;}
+.mycrsl .pagination a.selected 	{background-position: -26px -300px;cursor: default;}
+.mycrsl .pagination a span 		{display: none;}
+
+.clearfix {float: none;clear: both;}
+
+.updown							{padding-top:10px;}
+.updown a.prev_small, 
+.updown a.next_small 			{background: url(../images/miscellaneous_sprite.png) no-repeat transparent;width: 30px;height: 28px;display: block;position: absolute;left:45%; cursor: pointer;}
+.updown a.prev_small 			{top:-10%; background-position: -164px -168px;}
+.updown a.prev_small:hover		{background-position: -134px -168px;}
+.updown a.prev_small.disabled	{background-position:-105px -168px !important;}
+.updown a.next_small 			{bottom:-10%; top:auto !important; background-position: -163px -197px;}
+.updown a.next_small:hover 		{background-position:-133px -197px;}
+.updown a.next_small.disabled 	{background-position:-105px -197px !important;}
+
+
+@media (max-width: 800px) {
+	.mycrsl a.prev, 
+	.mycrsl a.next	{top:30%;}
+}
+
+@media (max-width: 450px) {
+	.mycrsl a.prev, 
+	.mycrsl a.next	{top:25%;}
+}
+.mycaption{position:absolute !important; width:100%; bottom:0px; left:0px; padding:10px 0px; font-size:16px; color:#fff; text-align:center; background: rgba(0, 0, 0, .5) !important; text-shadow:1px 1px 1px #333;font-weight: bold;}

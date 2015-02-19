@@ -1,0 +1,986 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Multi Events Subscription Pop\n"
+"POT-Creation-Date: 2014-03-25 11:37+0400\n"
+"PO-Revision-Date: 2014-03-25 11:37+0400\n"
+"Last-Translator: \n"
+"Language-Team: Ivan Churakov\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\WebServers\\home\\test1.ru\\www\\wp01\\wp-content"
+"\\plugins\\mega-subscribe-popup\n"
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:28
+msgid ""
+"Dear visitor! This is demonstration of <a href=\"http://www.icprojects.net/"
+"mega-subscribe-popup.html\">Multi Events Subscription Pop</a> plugin."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:147
+msgid "Width of popup box must be at least 400px"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:148
+msgid "Height of popup box must be at least 100px"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:149
+msgid "Popup box color must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:150
+msgid "Overlay color must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:151
+msgid "Overlay opacity must be between 0 and 1"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:153
+msgid "Popup box background URL must be valid URL"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:156
+msgid "Website URL must be valid URL"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:158
+msgid "Start delay for open event must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:159
+msgid "Autoclose delay for OnPageLoad event must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:160
+msgid "Autoclose delay for OnClickExternalLink event must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:161
+msgid "Idle delay for OnIdle event must be valid value"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:162
+msgid "Top offset for OnScrollDown event must be higher then 200px"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:164
+msgid "Invalid MailChimp API Key"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:165
+msgid "Invalid MailChimp List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:168
+msgid "Invalid iContact AppID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:169
+msgid "Invalid iContact API Username"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:170
+msgid "Invalid iContact API Password"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:171
+msgid "Invalid iContact List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:174
+msgid "Invalid Campaign Monitor API Key"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:175
+msgid "Invalid Campaign Monitor List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:178
+msgid "Invalid GetResponse API Key"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:179
+msgid "Invalid GetResponse Campaign ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:182
+msgid "Invalid AWeber Connection"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:183
+msgid "Invalid AWeber List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:186
+msgid "Invalid MyMail List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:220
+msgid "Subscribe Popup Options"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:221
+msgid "Enable OnPageLoad popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:221
+msgid ""
+"Please tick checkbox if you would like to activate OnPageLoad subscribe "
+"popup for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:225
+msgid "Enable OnClickExternalLink popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:225
+msgid ""
+"Please tick checkbox if you would like to activate OnClickExternalLink "
+"subscribe popup for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:229
+msgid "Enable OnCopyContent popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:229
+msgid ""
+"Please tick checkbox if you would like to activate OnCopyContent subscribe "
+"popup for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:233
+msgid "Enable OnScrollDown popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:233
+msgid ""
+"Please tick checkbox if you would like to activate OnScrollDown subscribe "
+"popup for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:237
+msgid "Enable OnIdle popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:237
+msgid ""
+"Please tick checkbox if you would like to activate OnIdle subscribe popup "
+"for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:241
+msgid "Enable OnContextMenu popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:241
+msgid ""
+"Please tick checkbox if you would like to activate OnContextMenu subscribe "
+"popup for this post."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:280
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:281
+msgid "Multi Events Subscription Pop"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:288
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:289
+msgid "Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:296
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:297
+msgid "Subscribers"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:319
+msgid "The following error(s) exists:"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:322
+msgid "Multi Events Subscription Pop - Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:329
+msgid "Popup Box Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:333
+msgid "Window content"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:342
+msgid ""
+"Please enter content of the window. HTML allowed. Subscription form is "
+"inserted below this content."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:346
+msgid "Window size (px)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:350
+msgid ""
+"Please set window size (width x height). Window height is calculated "
+"automatically. Here you set minimum height value."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:354
+msgid "Window color"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:357
+msgid "Please set popup box background color."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:361
+msgid "Background image URL"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:364
+msgid ""
+"Enter your URL of background image. Leave this field blank if you do not "
+"need background image."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:368
+msgid "Font color scheme"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:377
+msgid "Please select font color scheme."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:381
+msgid "Overlay color"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:384
+msgid "Please set overlay color."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:388
+msgid "Overlay opacity"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:391
+msgid "Please set overlay opacity. Value must be between 0 and 1."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:395
+msgid "Small screen devices"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:397
+msgid "Disable popup for small screen devices"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:398
+msgid ""
+"Please tick checkbox if you want to disable popup window for small screen "
+"devices."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:402
+msgid "CSV column separator"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:405
+msgid "Semicolon - \";\""
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:406
+msgid "Comma - \",\""
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:407
+msgid "Tab"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:409
+msgid "Please select CSV column separator."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:412
+msgid "Disable name field"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:414
+msgid "Disable \"Name\" field in opt-in form"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:415
+msgid ""
+"Please tick checkbox if you want to disable \"Name\" field in opt-in form."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:419
+msgid "Stylesheet"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:420
+msgid "Customize widgets stylesheet."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:426
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:471
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:516
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:547
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:578
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:655
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:698
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:751
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:785
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:815
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:852
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:882
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:905
+msgid "Update Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:431
+msgid "MailChimp Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:435
+msgid "Enable MailChimp"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:437
+msgid "Submit contact details to MailChimp"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:438
+msgid ""
+"Please tick checkbox if you want to submit contact details to MailChimp. "
+"<strong>CURL required!</strong>"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:442
+msgid "MailChimp API Key"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:445
+msgid ""
+"Enter your MailChimp API Key. You can get it <a href=\"https://admin."
+"mailchimp.com/account/api-key-popup\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:449
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:508
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:570
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:635
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:682
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1056
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1364
+msgid "List ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:452
+msgid ""
+"Enter your List ID. You can get it <a href=\"https://admin.mailchimp.com/"
+"lists/\" target=\"_blank\">here</a> (click <strong>Settings</strong>)."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:456
+msgid "Double opt-in"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:458
+msgid "Ask users to confirm their subscription"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:459
+msgid "Control whether a double opt-in confirmation message is sent."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:463
+msgid "Send Welcome"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:465
+msgid "Send Lists Welcome message"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:466
+msgid ""
+"If your <strong>Double opt-in</strong> is disabled and this is enabled, "
+"MailChimp will send your lists Welcome Email if this subscribe succeeds. If "
+"<strong>Double opt-in</strong> is enabled, this has no effect."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:476
+msgid "iContact Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:480
+msgid "Enable iContact"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:482
+msgid "Submit contact details to iContact"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:483
+msgid ""
+"Please tick checkbox if you want to submit contact details to iContact. "
+"<strong>CURL required!</strong>"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:487
+msgid "AppID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:490
+msgid ""
+"Obtained when you <a href=\"http://developer.icontact.com/documentation/"
+"register-your-app/\" target=\"_blank\">Register the API application</a>. "
+"This identifier is used to uniquely identify your application."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:494
+msgid "API Username"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:497
+msgid "The iContact username for logging into your iContact account."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:501
+msgid "API Password"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:504
+msgid ""
+"The API application password set when the application was registered. This "
+"API password is used as input when your application authenticates to the "
+"API. This password is not the same as the password you use to log in to "
+"iContact."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:511
+msgid "Enter your List ID. You can get List ID from"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:511
+msgid "Available Lists"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:511
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:542
+msgid "this table"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:521
+msgid "GetResponse Details"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:525
+msgid "Enable GetResponse"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:527
+msgid "Submit contact details to GetResponse"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:528
+msgid ""
+"Please tick checkbox if you want to submit contact details to GetResponse. "
+"<strong>CURL required!</strong>"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:532
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:563
+msgid "API Key"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:535
+msgid ""
+"Enter your GetResponse API Key. You can get your API Key <a href=\"https://"
+"app.getresponse.com/my_api_key.html\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:539
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1329
+msgid "Campaign ID"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:542
+msgid "Enter your Campaign ID. You can get Campaign ID from"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:542
+msgid "Available Campaigns"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:552
+msgid "Campaign Monitor Details"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:556
+msgid "Enable Campaign Monitor"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:558
+msgid "Submit contact details to Campaign Monitor"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:559
+msgid ""
+"Please tick checkbox if you want to submit contact details to Campaign "
+"Monitor. <strong>CURL required!</strong>"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:566
+msgid ""
+"Enter your Campaign Monitor API Key. You can get your API Key from the "
+"Account Settings page when logged into your Campaign Monitor account."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:573
+msgid ""
+"Enter your List ID. You can get List ID from the list editor page when "
+"logged into your Campaign Monitor account."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:583
+msgid "AWeber Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:587
+msgid "Enable AWeber"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:589
+msgid "Submit contact details to AWeber"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:590
+msgid "Please tick checkbox if you want to submit contact details to AWeber."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:609
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1088
+msgid "Authorization code"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:612
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1091
+msgid "here"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:618
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1097
+msgid "Make Connection"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:627
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1048
+msgid "Connected"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:629
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1050
+msgid "Disconnect"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:631
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1052
+msgid "Click the button to disconnect."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:638
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1059
+msgid "--- Select List ID ---"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:646
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:691
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1067
+msgid "Select your List ID."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:662
+msgid "MyMail Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:669
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:675
+msgid "Enable MyMail"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:670
+msgid ""
+"Please <a href=\"edit-tags.php?taxonomy=newsletter_lists&post_type=newsletter"
+"\">create</a> at least one list."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:677
+msgid "Submit contact details to MyMail"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:678
+msgid "Please tick checkbox if you want to submit contact details to MyMail."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:705
+msgid "OnPageLoad Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:708
+msgid "OnPageLoad popup appears once user open page in browser."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:710
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:761
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:795
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:825
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:862
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:892
+msgid "Display mode"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:713
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:764
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:798
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:828
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:865
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:895
+msgid "All website pages"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:714
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:765
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:799
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:829
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:866
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:896
+msgid "Homepage and selected posts/pages"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:715
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:766
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:800
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:830
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:867
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:897
+msgid "Selected posts/pages"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:716
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:767
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:801
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:831
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:868
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:898
+msgid "Disable popup"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:718
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:769
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:803
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:833
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:870
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:900
+msgid ""
+"Select display mode for popup box. You can assign selected pages on post/"
+"page editor."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:722
+msgid "Start delay (seconds)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:725
+msgid ""
+"Popup appears with this delay after page loaded. Set \"0\" for immediate "
+"start."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:729
+msgid "Autoclose delay (seconds)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:732
+msgid ""
+"Popup is automatically closed after this period of time. Set \"0\", if you "
+"do not need this functionality."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:736
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:837
+msgid "Once per visit"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:738
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:839
+msgid "Show popup box once per visit"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:739
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:840
+msgid ""
+"Please tick checkbox if you want to show popup once per visit (session)."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:743
+msgid "Disable close button"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:745
+msgid "Do not display close button"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:746
+msgid "Please tick checkbox disable close button."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:756
+msgid "OnClickExternalLink Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:759
+msgid ""
+"OnClickExternalLink popup appears once user click any external link on page."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:773
+msgid "Redirect delay (seconds)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:776
+msgid ""
+"Please enter delay in seconds. Visitors have to wait this period of time or "
+"share your page to be redirected."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:780
+msgid "Excluded links"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:781
+msgid ""
+"Please enter list of links that must be excluded from consideration (one "
+"item per line). You can enter part of link. For example, if you enter "
+"\"wordpress.org\", all links that contains this string will be excluded from "
+"consideration. Links are case insensitive."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:790
+msgid "OnCopyContent Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:793
+msgid ""
+"OnCopyContent popup appears once user copy part of your page into clipboard "
+"(using Ctrl+C or through context menu)."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:807
+msgid "Block copying content"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:809
+msgid "Do not copy content into clipboard if not shared"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:810
+msgid ""
+"Please tick checkbox if you do not want to allows copying content into "
+"clipboard until user shared your page."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:820
+msgid "OnScrollDown Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:823
+msgid "OnScrollDown popup appears once user scroll down current page."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:844
+msgid "Scrolling offset (px)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:847
+msgid ""
+"Please set scrolling offset. Subscribe Popup appears only if user scroll "
+"down this number of pixels."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:857
+msgid "OnIdle Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:860
+msgid "OnIdle popup appears after defined period of inactivity."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:874
+msgid "Idle period (seconds)"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:877
+msgid ""
+"Please set idle period. Subscribe Popup appears after this period of "
+"inactivity."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:887
+msgid "OnContextMenu Popup Settings"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:890
+msgid ""
+"OnContextMenu popup appears once user call context menu (click right mouse "
+"button)."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1003
+msgid "Authorization Code not found."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1024
+msgid "Invalid Authorization Code!"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1034
+msgid "Can not access AWeber account!"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1124
+msgid "Record successfully deleted!"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1129
+msgid "Multi Events Subscription Pop - Users"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1133
+msgid "Search:"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1134
+msgid "Search"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1135
+msgid "Reset search results"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1137
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1166
+msgid "CSV Export"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1141
+msgid "Name"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1142
+msgid "E-mail"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1143
+msgid "Registered"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1154
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1171
+msgid "Delete record"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1160
+msgid "No results found for"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1160
+msgid "List is empty."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1165
+msgid "Delete All"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1170
+msgid "Legend:"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1176
+msgid "Do you really want to continue?"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1311
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1313
+msgid "API call failed."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1317
+msgid "API Key failed"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1324
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1359
+msgid "GetResponse Campaigns"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1330
+msgid "Campaign Name"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1343
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1344
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1378
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1379
+msgid "No data found!"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1365
+msgid "List Name"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1390
+msgid ""
+"<strong>Multi Events Subscription Pop plugin almost ready.</strong> You must "
+"do some <a href=\"admin.php?page=megasubscribepopup\">settings</a> for it to "
+"work."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1487
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1511
+msgid "Enter your name"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1487
+msgid "Please enter your name."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1488
+msgid "Enter your e-mail"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1488
+msgid "Please enter your e-mail."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1489
+msgid "Subscribe"
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1735
+msgid "Unable to execute the cURL handle."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1738
+msgid "The iContact API did not return valid JSON."
+msgstr ""
+
+#: c:\WebServers\home\test1.ru\www\wp01\wp-content\plugins\mega-subscribe-popup/mega-subscribe-popup.php:1758
+msgid "Pages:"
+msgstr ""

@@ -1,0 +1,3 @@
+[14-Jan-2015 21:02:32 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/batterypark2014/public_html/bpca/wp-content/themes/bpca-master/index.php on line 14
+[14-Jan-2015 21:02:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/batterypark2014/public_html/bpca/wp-content/themes/bpca-master/index.php on line 14
+[24-Jan-2015 01:25:33 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/batterypark2014/public_html/bpca/wp-content/themes/bpca-master/index.php on line 14

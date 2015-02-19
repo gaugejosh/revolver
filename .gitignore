@@ -1,13 +1,34 @@
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
+## Root Files ##
+/index.php
+/license.txt
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-config.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+## Root Folders ##
+/wp-admin/
+/wp-includes/
+
+## WP Content ##
+/wp-content/index.php
+/wp-content/cache/
+/wp-content/plugins/index.php
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/themes/index.php
+
+## Default Plugins & Themes ##
+/wp-content/themes/twentyfifteen/
+/wp-content/themes/twentyfourteen/
+/wp-content/themes/twentythirteen/
