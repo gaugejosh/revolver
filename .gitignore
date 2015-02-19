@@ -1,6 +1,7 @@
 ## Root Files ##
 /index.php
 /license.txt
+/readme.html
 /wp-activate.php
 /wp-blog-header.php
 /wp-comments-post.php
@@ -27,6 +28,8 @@
 /wp-content/upgrade/
 /wp-content/uploads/
 /wp-content/themes/index.php
+/wp-content/plugins/akismet/
+/wp-content/plugins/hello.php
 
 ## Default Plugins & Themes ##
 /wp-content/themes/twentyfifteen/
