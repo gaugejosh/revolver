@@ -61,15 +61,15 @@ $timelineinfo = array(); // for constructing the tabs
                 ?>
                 <div class="timeline-container">
                     <div class="timeline-photo">
-                        <img src="<?=$imginfo->img[0];?>" />
+                        <img src="<?php $imginfo->img[0];?>" />
                     </div>
                     <div class="timeline-info-container">
                         <div class="time-descr-box">
                             <div class="timeline-header-text">
-                                <?=$imginfo->imghead;?>
+                                <?php $imginfo->imghead;?>
                             </div>
                             <div class="timeline-descr">
-                                <?=$imginfo->imgtext;?>
+                                <?php $imginfo->imgtext;?>
                             </div>
                         </div>
                     </div>

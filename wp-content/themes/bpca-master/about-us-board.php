@@ -113,21 +113,21 @@ get_header();
                 ?>
             </div>
             <div class="head-quote-attrib board">
-                <?=strtoupper($quoteattrib);?><br />
-                <?=$quotetitle;?>
+                <?php strtoupper($quoteattrib);?><br />
+                <?php $quotetitle;?>
             </div>
         </div>
             <div class="page-head-img">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
             </div>
         <div class="section-title">
-                <?=strtoupper($header1);?>
+                <?php strtoupper($header1);?>
             </div>
         <div class="board-material-container">
         <form method="POST" name="downloadform" id="downloadform">
         <div class="board-col">
             <div class="upcomingboard">
-                <div id="head4"> <strong><?=$s1b4head;?></strong><br /></div>
+                <div id="head4"> <strong><?php $s1b4head;?></strong><br /></div>
             <?php
                 if ($s1b4descr != "") {
                     echo $s1b4descr . '<br />';
@@ -191,7 +191,7 @@ get_header();
                 }
                 ?></div>
             <div class="boardinfo">
-                <div id="head2"><strong><?=$s1b2head;?></strong><br /></div>
+                <div id="head2"><strong><?php $s1b2head;?></strong><br /></div>
             <?php
                 if ($s1b2descr != "") {
                     echo $s1b2descr . '<br />';
@@ -257,7 +257,7 @@ get_header();
             </div>
             <div class="past-board-min">
                 <div id="minhead">
-                    <strong><?=$s1b1head;?></strong></div>
+                    <strong><?php $s1b1head;?></strong></div>
             <?php
                 if ($s1b1descr != "") {
                     //echo $s1b1descr . '<br />';
@@ -302,7 +302,7 @@ get_header();
             </div>
         </div>
         <div class="board-col2">
-            <div id="head3"><strong><?=$s1b3head;?></strong><br /></div>
+            <div id="head3"><strong><?php $s1b3head;?></strong><br /></div>
             <?php
                 if ($s1b3descr != "") {
                     echo $s1b3descr . '<br />';
@@ -326,7 +326,7 @@ get_header();
 </form>
         </div> <!-- board-material-container -->
                 <div class="section-title">
-                <?=strtoupper($header3);?>
+                <?php strtoupper($header3);?>
             </div>
             <div class="board-commit-area-container">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Board Committees') ) : ?>

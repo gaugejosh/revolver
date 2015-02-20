@@ -216,7 +216,7 @@ for ($i = 1; $i < $currowcount; $i++) {
     $tabnames .= "#tab-container" . $i;
 }
 ?>
-$('<?=$tabnames;?>').easytabs({
+$('<?php $tabnames;?>').easytabs({
               collapsible: true,
               collapsedByDefault: true,
               transitionIn: 'slideDown',

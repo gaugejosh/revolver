@@ -48,7 +48,7 @@ if (array_key_exists('leed', $_GET)) {
             </div>
         <div class="building-header-area">
             <div class="event-image-area">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
             </div>
             <div class="building-filter-area">
                 <span class="filter-head">FILTER BY BUILDING TYPE</span><br />
@@ -408,7 +408,7 @@ for ($i = 1; $i < $currowcount; $i++) {
     $tabnames .= "#tab-container" . $i;
 }
 ?>
-$('<?=$tabnames;?>').easytabs({
+$('<?php $tabnames;?>').easytabs({
               collapsible: true,
               collapsedByDefault: true,
               transitionIn: 'slideDown',

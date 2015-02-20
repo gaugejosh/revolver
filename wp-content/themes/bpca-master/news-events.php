@@ -49,7 +49,7 @@ if (array_key_exists('filter-by-cat', $_POST)) {
             </div>
         <div class="event-header-area">
             <div class="event-image-area">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
             </div>
             <div class="mobile-events">
                 <div class="event-filter-area">
@@ -160,10 +160,10 @@ if (array_key_exists('filter-by-cat', $_POST)) {
                     </div>
                    <br />
                     </div><br />
-                    <input type="hidden" name="filter-start-date" id="filter-start-date" value="<?=$startdate;?>" />
-                    <input type="hidden" name="filter-end-date" id="filter-end-date" value="<?=$enddate;?>" />
+                    <input type="hidden" name="filter-start-date" id="filter-start-date" value="<?php $startdate;?>" />
+                    <input type="hidden" name="filter-end-date" id="filter-end-date" value="<?php $enddate;?>" />
                     <input type="hidden" name="filter-by-cat" value="filter" />
-                    <input type="hidden" name="current-date" value="<?=$curdate;?>" />
+                    <input type="hidden" name="current-date" value="<?php $curdate;?>" />
                     <input type="submit" class="cat-button events" name="filter-by-cat" value="GO" />
                 </form>
             </div>
@@ -491,7 +491,7 @@ for ($i = 1; $i < $currowcount; $i++) {
     $tabnames .= "#tab-container" . $i;
 }
 ?>
-$('<?=$tabnames;?>').easytabs({
+$('<?php $tabnames;?>').easytabs({
               collapsible: true,
               collapsedByDefault: true,
               transitionIn: 'slideDown',
@@ -557,7 +557,7 @@ $(function() {
                                 <?php
                                     if ($curday != "") {
                                 ?>
-                                        $('.fc-date:contains("<?=$curday;?>")').addClass("CurDate");
+                                        $('.fc-date:contains("<?php $curday;?>")').addClass("CurDate");
                                 <?php
                                     }
                                 ?>

@@ -60,15 +60,15 @@ get_header(); ?>
         ?>
         <div id="page-quote-yellow">
             <div class="head-quote-text yellowbg">
-                &quot;<?=$quotebox;?>&quot;
+                &quot;<?php $quotebox;?>&quot;
             </div>
             <div class="head-quote-attrib">
-                <?=strtoupper($quoteattrib);?><br />
-                <?=$quotetitle;?>
+                <?php strtoupper($quoteattrib);?><br />
+                <?php $quotetitle;?>
             </div>
         </div>
             <div class="page-head-img">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
             </div>
             <?php
                 // count the number of words in the description text and split the text in half
@@ -82,11 +82,11 @@ get_header(); ?>
                 //$descr2text = splitTextByWords($fulldescrtext, $halfwords, $halfwords);
             ?>
             <div class="section-title">
-                <?=strtoupper($section1);?>
+                <?php strtoupper($section1);?>
             </div>
         <div class="page-descr-container rfp">
                     <div class="page-descr-text2">
-                        <?=$rfpdescr;?>
+                        <?php $rfpdescr;?>
                     </div>
             </div>
             <div class="rfp-file-section">
@@ -134,7 +134,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="section-title">
-                <?=strtoupper($section2);?>
+                <?php strtoupper($section2);?>
             </div>
             <div class="rfp-contactinfo">
                 <?php
@@ -149,7 +149,7 @@ get_header(); ?>
                         <div id="diverse-box">
                         <div class="checker disabled">
                         <span class="disabled">
-                        <input type="checkbox" id="diverse-question" name="downlink[]" value="<?=$file1;?>" />
+                        <input type="checkbox" id="diverse-question" name="downlink[]" value="<?php $file1;?>" />
                         </span>
                         </div>
                         <div class="styled-checks">
@@ -159,7 +159,7 @@ get_header(); ?>
                         <div id="vendor-box">
                         <div class="checker disabled">
                         <span class="disabled">
-                        <input type="checkbox" id="vendor-setup" name="downlink[]" value="<?=$file2;?>" />
+                        <input type="checkbox" id="vendor-setup" name="downlink[]" value="<?php $file2;?>" />
                         </span>
                         </div>
                          <div class="styled-checks">
@@ -169,7 +169,7 @@ get_header(); ?>
                         <div id="ach-box">
                             <div class="checker disabled">
                         <span class="disabled">
-                        <input type="checkbox" id="ach-form" name="downlink[]" value="<?=$file3;?>" />
+                        <input type="checkbox" id="ach-form" name="downlink[]" value="<?php $file3;?>" />
                         </span>
                             </div>
                             <div class="styled-checks">
@@ -179,7 +179,7 @@ get_header(); ?>
                         <div id="w9-box">
                             <div class="checker disabled">
                         <span class="disabled">
-                        <input type="checkbox" id="w9-form" name="downlink[]" value="<?=$file4;?>" />
+                        <input type="checkbox" id="w9-form" name="downlink[]" value="<?php $file4;?>" />
                         </span>
                             </div>
                              <div class="styled-checks">
@@ -196,11 +196,11 @@ get_header(); ?>
                 </div>
             </div>
         <div class="section-title" >
-                <?=strtoupper($section3);?>
+                <?php strtoupper($section3);?>
             </div>
             <div class="page-descr-container rfp">
                     <div class="page-descr-text">
-                        <?=$fulldescrtext;?>
+                        <?php $fulldescrtext;?>
                     </div>
             </div>
         <!--<iframe src="" id="download-iframe" style="display:none;" />-->

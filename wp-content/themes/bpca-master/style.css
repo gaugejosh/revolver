@@ -4910,12 +4910,75 @@ next.page-numbers:hover {
     margin-bottom: 10px;
 }
 
-/* BOX GRID STYLES */
+/**********************/
+/* BOX GRID STYLES
+/**********************/
+
+/* STANDARD CLASSES */
 .leaders,
 .leader-info-list {
     list-style: none;
 }
 
+.leader {
+    border-right:  1px solid #ebedee;
+    border-bottom: 1px solid #ebedee;
+    float:         left;
+    width:         33.33333333%
+}
+
+.leader-button {
+    background-color: #dad9d7;
+    bottom:           0;
+    color:            #333;
+    cursor:           pointer;
+    font-size:        16px;
+    font-weight:      bold;
+    height:           32px;
+    position:         absolute;
+    right:            0;
+    width:            32px;
+}
+
+.leader-content {
+    position: relative;
+}
+
+.leader-description {
+    background-color: #19a6e2;
+    display:          none;
+    padding:          20px;
+    width:            100%;
+}
+
+.leader-description .left-col,
+.leader-description .right-col {
+    float: left;
+    width: 47.5%;
+}
+
+.leader-description .left-col { margin-right: 5%; }
+
+.leader-info {
+    background-color: #fff;
+    height:           100%;
+    left:             0;
+    padding:          35px;
+    position:         absolute;
+    top:              0;
+    width:            100%;
+}
+
+.leader-info-list {
+    font-size: 18px;
+}
+
+.leader-info-list h2 {
+    font-family: "Proxima Nova - Bold";
+    font-size:   24px;
+}
+
+/* PSEUDO-ELEMENTS */
 .leaders:before,
 .leaders:after {
     clear:   both;
@@ -4923,25 +4986,36 @@ next.page-numbers:hover {
     display: table;
 }
 
-.leader {
-    float: left;
-    width: 33.33333333%
+.leader-button:after {
+    content:   '+';
+    left:      50%;
+    position:  absolute;
+    top:       50%;
+    transform: translate(-50%, -50%);
 }
 
-.leader-content {
-    position: relative;
+.leader-description:before,
+.leader-description:after {
+    clear:   both;
+    content: '';
+    display: table;
 }
 
-.leader-info {
-    background-color: #fff;
-    height:           100%;
-    left:             0;
-    padding:          50px;
-    position:         absolute;
-    top:              0;
-    width:            100%;
+/* HOVER ACTIONS */
+.leader:hover .leader-button {
+    background-color: #19a6e2;
+    color:            #fff;
 }
 
-.leader-info:hover {
-    opacity: .5;
+.leader:hover .leader-info {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.leader:hover .leader-info-list {
+    display: none;
+}
+
+/* ACTIVE STATES */
+.leader.active .leader-info {
+    background-color: rgba(255, 255, 255, 0);
 }

@@ -31,7 +31,7 @@ if (array_key_exists('filter-by-cat', $_POST)) {
             <div class="blog-head-container">
 
                 <div class="event-image-area">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
                 </div>
 <div class="blog-sidebar">
                 <span class="filter-head">FILTER BY FOCUS AREA</span><br />

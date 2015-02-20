@@ -54,15 +54,15 @@ get_header(); ?>
             }
         ?>
             <div class="head-quote-text">
-                &quot;<?=the_field('quote_box');?>&quot;
+                &quot;<?php the_field('quote_box');?>&quot;
             </div>
             <div class="head-quote-attrib">
-                <?=strtoupper(get_field('quote_attrib'));?><br />
-                <?=get_field('quote_title');?>
+                <?php strtoupper(get_field('quote_attrib'));?><br />
+                <?php get_field('quote_title');?>
             </div>
         </div>
             <div class="page-head-img">
-                <?=the_post_thumbnail();?>
+                <?php the_post_thumbnail();?>
             </div>
             <?php
                 // count the number of words in the description text and split the text in half
@@ -80,10 +80,10 @@ get_header(); ?>
                      // only show the diagram on devices larger than a phone
             ?>
             <div class="section-title">
-                <?=strtoupper(get_field('section_title_1'));?>
+                <?php strtoupper(get_field('section_title_1'));?>
             </div>
             <div class="diagram">
-                <img src="<?=the_field('diagram_1');?>" border="0" />
+                <img src="<?php the_field('diagram_1');?>" border="0" />
             </div>
             <?php
                 }
@@ -147,15 +147,15 @@ get_header(); ?>
                 ?>
                 <div class="timeline-container">
                     <div class="timeline-photo">
-                        <img src="<?=$imginfo->img[0];?>" />
+                        <img src="<?php $imginfo->img[0];?>" />
                     </div>
                     <div class="timeline-info-container">
                         <div class="time-descr-box">
                             <div class="timeline-header-text">
-                                <?=$imginfo->imghead;?>
+                                <?php $imginfo->imghead;?>
                             </div>
                             <div class="timeline-descr">
-                                <?=$imginfo->imgtext;?>
+                                <?php $imginfo->imgtext;?>
                             </div>
                         </div>
                     </div>
@@ -177,14 +177,14 @@ get_header(); ?>
                     
             ?>
             <div class="section-title">
-                <?=strtoupper($sectiontitle2);?>
+                <?php strtoupper($sectiontitle2);?>
             </div>
             <?php
                 }
             ?>
             <div class="page-descr-container" id="nobottom">
                 <div class="page-descr-text">
-                        <?=$fulldescrtext;?>
+                        <?php $fulldescrtext;?>
                 </div>
             </div>
             <?php
@@ -193,7 +193,7 @@ get_header(); ?>
                     
             ?>
             <div class="diagram">
-                <img src="<?=the_field('diagram_2');?>" border="0" />
+                <img src="<?php the_field('diagram_2');?>" border="0" />
             </div>
         <?php
                 }
