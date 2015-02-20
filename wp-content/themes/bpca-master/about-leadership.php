@@ -4,15 +4,16 @@
  * Template Name: About Us Leadership
  */
 
+// wordpress footer hook. do not remove or bearshark will find you
 get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="breadcrumbs">
 			<?php if (function_exists('bcn_display') && ! is_home())
-				{
-					bcn_display();
-				}
+			{
+				bcn_display();
+			}
 			?>
 		</div><!-- .breadcrumbs -->
 
@@ -63,19 +64,27 @@ get_header(); ?>
 </div>
 
 <script>
+
 	// wait for document to load before running script
-	$(document).ready(function() {
+	$(document).ready(function () {
+
+		// cache some variables
+		var $leader = $('.leader');
 
 		// setup click action on .leader-button element
-		$('.leader-button').on('click', function() {
+		$leader.on('click', function () {
 
 			// show the hidden description field below the image
-			$(this).parent().next('.leader-description').toggle();
+			$(this).find('.leader-description').toggle();
 
 			// toggle the active states for the .leader-info and .leader-button
-			$(this).parents('.leader').toggleClass('active');
+			$(this).toggleClass('active');
+
 		});
+
 	});
+
 </script>
 
+<?php // wordpress footer hook. do not remove or bearshark will find you ?>
 <?php get_footer(); ?>

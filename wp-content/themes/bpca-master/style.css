@@ -4924,6 +4924,7 @@ next.page-numbers:hover {
     border-right:  1px solid #ebedee;
     border-bottom: 1px solid #ebedee;
     float:         left;
+    position:      relative;
     width:         33.33333333%
 }
 
@@ -4946,9 +4947,14 @@ next.page-numbers:hover {
 
 .leader-description {
     background-color: #19a6e2;
+    color:            #fff;
     display:          none;
     padding:          20px;
+    position:         absolute;
+    top:              auto;
+    left:             0;
     width:            100%;
+    z-index:          9999;
 }
 
 .leader-description .left-col,
@@ -5016,6 +5022,19 @@ next.page-numbers:hover {
 }
 
 /* ACTIVE STATES */
+.leader.active .leader-button {
+    background: #19a6e2;
+    color:      #fff;
+}
+
+.leader.active .leader-button:after {
+    content: '-';
+}
+
 .leader.active .leader-info {
     background-color: rgba(255, 255, 255, 0);
+}
+
+.leader.active .leader-info-list {
+    display: none;
 }
