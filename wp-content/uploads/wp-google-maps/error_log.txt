@@ -1,0 +1,2 @@
+Error log created
+2015-01-16 15:47:43: Could not save XML file -> Could not save marker XML file (/home/batterypark2014/public_html/bpca/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
