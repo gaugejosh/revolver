@@ -2676,7 +2676,7 @@ div#page-quote-yellow {
 }
 
 .cat-button {
-    margin-top : -78px;
+    margin-top:  -78px;
     margin-left: 12px;
 }
 
@@ -4911,7 +4911,8 @@ next.page-numbers:hover {
 }
 
 /* BOX GRID STYLES */
-.leaders {
+.leaders,
+.leader-info-list {
     list-style: none;
 }
 
@@ -4924,5 +4925,23 @@ next.page-numbers:hover {
 
 .leader {
     float: left;
-    width: 33%
+    width: 33.33333333%
+}
+
+.leader-content {
+    position: relative;
+}
+
+.leader-info {
+    background-color: #fff;
+    height:           100%;
+    left:             0;
+    padding:          50px;
+    position:         absolute;
+    top:              0;
+    width:            100%;
+}
+
+.leader-info:hover {
+    opacity: .5;
 }
