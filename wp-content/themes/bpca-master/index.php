@@ -57,7 +57,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-                    <div>&nbsp;</div>
                     <div class="main-image" style="margin-bottom: -8px">
                         <img src="<?=$homepagefull;?>" />
                            <div class="main-image-link">
@@ -90,8 +89,8 @@ get_header(); ?>
                                                 <div class="slides">
                                                     <div class="slides_content">
                                                         <div class="social-block-slider">
-                                                            <a href="https://twitter.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;
-                                                            <a href="https://www.facebook.com/bpca.ny" target="_blank" class="social-icon-link"><i class="fa fa-facebook fa-3x"></i></a> &nbsp;&nbsp;
+                                                            <a href="https://twitter.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-twitter fa-3x"></i></a>
+                                                            <a href="https://www.facebook.com/bpca.ny" target="_blank" class="social-icon-link"><i class="fa fa-facebook fa-3x"></i></a>
                                                             <!-- <a href="http://instagram.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-instagram fa-3x"></i></a>-->
                                                             <br /><br /><br />
                                                             <p class="html-slider-text" id="social-slide">Stay in the loop with social media</p>
@@ -145,8 +144,8 @@ get_header(); ?>
                                     <!-- Navigation Button Controls -->
 
                                     <div class="slider-nav">
-                                        <button class="backbtn" data-dir="prev">&nbsp;</button>
-                                        <button class="nextbtn" data-dir="next" style="float:right;">&nbsp;</button>
+                                        <button class="backbtn" data-dir="prev"></button>
+                                        <button class="nextbtn" data-dir="next" style="float:right;"></button>
                                     </div>
 
                                 </div>

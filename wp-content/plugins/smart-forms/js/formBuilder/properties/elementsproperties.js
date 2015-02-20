@@ -73,7 +73,7 @@ SimpleTextProperty.prototype.GenerateHtml=function()
     var tdStyle="";
     if(this.AdditionalInformation.MultipleLine==true)
     {
-        input='<textarea style="width:206px;" class="rednao-input-large" data-type="input" name="name" id="'+this.PropertyId+'" value="'+RedNaoEscapeHtml(this.GetPropertyCurrentValue())+'" placeholder="'+this.AdditionalInformation.Placeholder+'"/>';
+        input='<textarea style="width:206px;" class="rednao-input-large" data-type="input" name="name" id="'+this.PropertyId+'" placeholder="'+this.AdditionalInformation.Placeholder+'">'+RedNaoEscapeHtml(this.GetPropertyCurrentValue())+'</textarea>';
         tdStyle='vertical-align:top;'
     }
     else
@@ -744,3 +744,39 @@ IconProperty.prototype.GenerateHtml=function()
 };
 
 
+/************************************************************************************* Custom CSS Property ***************************************************************************************************/
+
+
+function CustomCSSProperty(formelement,propertiesObject)
+{
+    ElementPropertiesBase.call(this,formelement,propertiesObject,"CustomCSS","Custom CSS",{ManipulatorType:'basic'});
+}
+
+CustomCSSProperty.prototype=Object.create(ElementPropertiesBase.prototype);
+
+CustomCSSProperty.prototype.GenerateHtml=function()
+{
+    var tdStyle="";
+    var input='<input style="width: 206px;" class="rednao-input-large" data-type="input" type="text" name="name" id="'+this.PropertyId+'" value="'+RedNaoEscapeHtml(this.GetPropertyCurrentValue())+'" placeholder="None"/><span style="margin-left: 2px;cursor:hand;cursor:pointer;" data-toggle="tooltip" data-placement="right" title="Add all the custom styles separated by space, e.g. button blue" class="glyphicon glyphicon-question-sign"></span>';
+
+    var newProperty=rnJQuery( '<td style="text-align: right;'+tdStyle+'"><label class="rednao-properties-control-label"> '+this.PropertyTitle+' </label></td>'+
+    '<td  style="text-align: left">'+input+'</td>');
+    newProperty.find('span').tooltip();
+    var self=this;
+    newProperty.keyup(function(){
+        self.Manipulator.SetValue(self.PropertiesObject,self.PropertyName, (rnJQuery("#"+self.PropertyId).val()),self.AdditionalInformation);
+        self.RefreshElement();
+
+    });
+    return newProperty;
+};
+
+CustomCSSProperty.prototype.RefreshElement=function()
+{
+    var previousClasses=this.FormElement.JQueryElement.attr('class');
+    var newClasses=this.FormElement.GetElementClasses();
+    if(previousClasses.indexOf('SmartFormsElementSelected')>=0)
+        newClasses+=' SmartFormsElementSelected';
+    this.FormElement.JQueryElement.attr('class',newClasses);
+
+};

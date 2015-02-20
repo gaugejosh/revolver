@@ -2,7 +2,7 @@
 
 /**
 * Template Name: About Us Board
-* 
+*
 */
 if (array_key_exists('down-files', $_POST)) {
     // download each file selected
@@ -40,10 +40,10 @@ if (array_key_exists('down-files', $_POST)) {
 $filename = explode("/", $file);
 // last index is the file name
 $thisname = $filename[sizeof($filename) - 1];
-header("Content-Disposition: attachment; filename=" . urlencode($thisname));   
+header("Content-Disposition: attachment; filename=" . urlencode($thisname));
 header("Content-Type: application/octet-stream");
 header("Content-Type: application/download");
-header("Content-Description: File Transfer");            
+header("Content-Description: File Transfer");
 header("Content-Length: " . filesize($file));
 flush(); // this doesn't really matter.
 $fp = fopen($file, "r");
@@ -51,13 +51,13 @@ while (!feof($fp))
 {
     echo fread($fp, 65536);
     flush(); // this is essential for large downloads
-} 
-fclose($fp); 
+}
+fclose($fp);
         }
     }
-    
+
 }
-get_header(); 
+get_header();
 ?>
 
 <div id="primary" class="content-area">
@@ -108,7 +108,7 @@ get_header();
         ?>
         <div id="page-quote-blue">
             <div class="head-quote-text">
-                <?php 
+                <?php
                 echo $quote;
                 ?>
             </div>
@@ -145,7 +145,7 @@ get_header();
                     echo '<label for="link10">' . $meetmatname1 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($meetmat2 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -156,7 +156,7 @@ get_header();
                     echo '<label for="link20">' . $meetmatname2 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($meetmat3 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -167,7 +167,7 @@ get_header();
                     echo '<label for="link30">' . $meetmatname3 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($meetmat4 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -178,7 +178,7 @@ get_header();
                     echo '<label for="link40">' . $meetmatname4 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($meetmat5 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -209,7 +209,7 @@ get_header();
                     echo '<label for="link1">' . $addinfoname1 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($addinfo2 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -220,7 +220,7 @@ get_header();
                     echo '<label for="link2">' . $addinfoname2 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($addinfo3 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -231,7 +231,7 @@ get_header();
                     echo '<label for="link3">' . $addinfoname3 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($addinfo4 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -242,7 +242,7 @@ get_header();
                     echo '<label for="link4">' . $addinfoname4 . '</label><br />';
                     echo '</div>';
                 }
-                
+
                 if ($addinfo5 != "") {
                     echo '<div class="checker">';
                     echo '<span class="">';
@@ -262,10 +262,10 @@ get_header();
                 if ($s1b1descr != "") {
                     //echo $s1b1descr . '<br />';
                 }
-                
+
                 // retrieve the past 5 meeting minutes
-                
-                $args = array( 'post_type' => 'attachment', 
+
+                $args = array( 'post_type' => 'attachment',
                                'post_status' => 'inherit',
                                'post_mime_type' => 'application/pdf',
                                'posts_per_page' => 5,
@@ -276,8 +276,8 @@ get_header();
                                                 'terms'    => 'members_meeting_minutes',
                                                 ),
                                         ),
-                               //'meta_key' => 'places_page_order', 
-                               'orderby' => 'post_date', 
+                               //'meta_key' => 'places_page_order',
+                               'orderby' => 'post_date',
                                'order' => 'DESC'
                             );
                 $loop2 = new WP_Query( $args );
@@ -294,7 +294,7 @@ get_header();
                 echo '<label for="link' . get_the_ID() . '">' . get_the_title() . '</label>';
                 echo '</div>';
                 endwhile;
-                
+
             ?>
             <div class="box-read-more" id="more-results">
                     <a id="rm-black" href="../../public-information/#pub-info-2-cont-9">SEE MORE RESULTS</a>
@@ -307,12 +307,12 @@ get_header();
                 if ($s1b3descr != "") {
                     echo $s1b3descr . '<br />';
                 }
-                
+
                 // grab the next 4 upcoming meetings
                 $upcomingmeet = getUpcomingMeets();
             ?>
             <br />
-            
+
             <br /><br /><div class="webcast"><strong>MEETING WEBCASTS</strong><br /></div>
             View our past meetings or stream live meetings at:<br />
             <a href="http://webcasting.granicus.com/bpca/" target="_blank">http://webcasting.granicus.com/bpca/</a>
@@ -320,7 +320,7 @@ get_header();
             <div class="board-download">
             <a href="#" onclick="javascript:document.downloadform.submit();"><i class="fa fa-share-square-o"></i>&nbsp;&nbsp;Download</a><br />
             <a href="#" onclick="emailChecked()"><i class="fa fa-envelope-o"></i>&nbsp&nbsp;Forward to Friends</a><br />
-            <!-- <a href="#" onclick="printChecked()"><i class="fa fa-print"></i>&nbsp;&nbsp;Print</a> --> 
+            <!-- <a href="#" onclick="printChecked()"><i class="fa fa-print"></i>&nbsp;&nbsp;Print</a> -->
             </div>
             <input type='hidden' name='down-files' value='1' />
 </form>
@@ -329,12 +329,12 @@ get_header();
                 <?=strtoupper($header3);?>
             </div>
             <div class="board-commit-area-container">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Board Committees') ) : ?>  
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Board Committees') ) : ?>
 <?php endif; ?>
         </div>
         <div class="teaser-area">
             <?php
-            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Teasers Set 1') ) : 
+            if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Teasers Set 1') ) :
                     endif;
             ?>
         </div>
@@ -352,16 +352,16 @@ get_header();
         }
     });
 // function to initiate multiple downloads
-            function makeFrame( url ) 
-            { 
-                ifrm = document.createElement( "IFRAME" ); 
+            function makeFrame( url )
+            {
+                ifrm = document.createElement( "IFRAME" );
                 ifrm.setAttribute( "style", "display:none;" ) ;
-                ifrm.setAttribute( "src", url ) ; 
-                ifrm.style.width = 0+"px"; 
-                ifrm.style.height = 0+"px"; 
-                document.body.appendChild( ifrm ) ; 
-            }  
-            
+                ifrm.setAttribute( "src", url ) ;
+                ifrm.style.width = 0+"px";
+                ifrm.style.height = 0+"px";
+                document.body.appendChild( ifrm ) ;
+            }
+
             // force download of selected pdf files
             /*
             function downloadChecked( )
@@ -376,7 +376,7 @@ get_header();
                       }
                 }
             }
-            
+
             // force download of selected pdf files
             function downloadChecked2( )
             {
@@ -402,7 +402,7 @@ get_header();
                       }
                 }
             }
-            
+
             // email links to the checked off files
             function emailChecked() {
                 var emailbody = "";
@@ -416,14 +416,14 @@ get_header();
                       }
                 }
                 // open up the user's email client
-                window.location.href = "mailto:?subject=BPCA RFP Documents&body=" + emailbody; 
+                window.location.href = "mailto:?subject=BPCA RFP Documents&body=" + emailbody;
             }
 </script>
-<?php 
+<?php
 
 // function to grab the next 4 upcoming meetings
 function getUpcomingMeets() {
-    $args = array( 
+    $args = array(
         'posts_per_page' => 4,
         'eventDisplay' => 'upcoming',
         'tax_query' => array(

@@ -2,7 +2,6 @@
 
 function smart_forms_check_license($email,$key,&$error)
 {
-/*
     if($email!=null||$key!=null)
     {
         if(get_transient("smart_forms_check_again"))
@@ -16,21 +15,18 @@ function smart_forms_check_license($email,$key,&$error)
             update_option('smart_forms_license',$result['licenseType']);
 
             set_transient("smart_forms_check_again",1,60*60*24*7);
-            //return $result;
-            return true;
+            return $result;
         }
     }
-*/
-    //return array("is_valid"=>true);
-return true;
+
+    return array("is_valid"=>false);
 }
 
 function smart_forms_check_license_with_options(&$error)
 {
     $result=apply_filters("smart_forms_lc_is_valid_with_options",array());
 	$error=$result["error"];
-	//return $result;
-	return true;
+	return $result;
 }
 
 function smart_forms_license_is_valid($email,$key,&$error)
@@ -38,19 +34,19 @@ function smart_forms_license_is_valid($email,$key,&$error)
 	$result = apply_filters( "smart_forms_lc_is_valid", array(
 		"email"=>$email,
 		"key"=>$key,
-		"is_valid"=>true,
+		"is_valid"=>false,
 		"error"=>""
 	) );
+
 	$error=$result["error"];
-	//return $result;
-	return true;
+	return $result;
+
 }
 
 function smart_forms_load_license_manager($errorMessage)
 {
     $result=apply_filters("smart_forms_lc_is_valid_with_options",array());
-    //if($result["is_valid"])
-    if(true)
+    if($result["is_valid"])
     {
         ?><script language="javascript">
             var RedNaoSmartFormLicenseIsValid=true;
