@@ -23,7 +23,6 @@ and open the template in the editor.
     }
 
     .menu-toggle {
-        margin-left: 50px;
         border:      none;
         background:  none;
     }
@@ -85,31 +84,31 @@ and open the template in the editor.
     .main-row-3-col-1,
     .main-row-3-col-3 {
         position: relative;
-        float:    left;
-        width:    320px;
-        height:   280px;
+        float:    none;
     }
 
     .twitter-foot {
-        width:     320px;
-        height:    280px;
+        float:     none;
         font-size: 12px;
+        height:    auto;
+        padding:   20px;
+        width:     100%;
     }
 
     .main-row-1-col-3,
     .main-row-2-col-2,
     .main-row-3-col-2 {
         position: relative;
-        clear:    both;
-        float:    left;
-        width:    320px;
-        height:   280px;
+        /*clear:    both;*/
+        /*float:    left;*/
+        /*width:    320px;*/
+        /*height:   280px;*/
     }
 
     .main-row-2-col-1 > img,
     .main-row-2-col-2 > img {
-        width:  320px;
-        height: 280px;
+        /*width:  320px;*/
+        /*height: 280px;*/
     }
 
     .mr1c1-text-block,
@@ -137,6 +136,13 @@ and open the template in the editor.
     .tp_recent_tweets {
         margin-right:  0;
         margin-bottom: 0;
+    }
+
+    .tp_recent_tweets li {
+        background:   none;
+        clear:        none;
+        float:        none;
+        padding-left: 0;
     }
 
     h2#leader-widget-title {
@@ -185,7 +191,7 @@ and open the template in the editor.
         column-count:         1;
         -webkit-column-count: 1;
         -moz-column-count:    1;
-        padding:              30px 50px 30px 60px;
+        padding:              0 30px;
         width:                100%;
     }
 
@@ -501,7 +507,8 @@ and open the template in the editor.
 
     /* PRESS */
     .descr-text-box.one-column {
-        width: 100%;
+        padding: 30px;
+        width:   100%;
     }
 
     .awards-container-box {
@@ -519,7 +526,8 @@ and open the template in the editor.
 
     /* RFP */
     .page-descr-text {
-        width: 80%;
+        margin-left: 0;
+        width: 100%;
     }
 
     .download-form {
@@ -541,11 +549,9 @@ and open the template in the editor.
 
     /* Who We ARe */
     /*.diagram {*/
-        /*width: 640px;*/
+    /*width: 640px;*/
     /*}*/
-
     /* Image Gallery and Timeline Sliders */
-
     .flexslider3 {
         margin: 0 !important;
     }

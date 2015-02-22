@@ -50,7 +50,7 @@ and Blueprint http://www.blueprintcss.org/
 1.0 Reset
 --------------------------------------------------------------*/
 @font-face {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     src:         url('fonts/proximanova-bold-webfont.eot');
     src:         url('fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
                  url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
@@ -63,7 +63,7 @@ and Blueprint http://www.blueprintcss.org/
 }
 
 @font-face {
-    font-family: 'Proxima Nova - Light', sans-serif;
+    font-family: 'Proxima Nova - Light';
     src:         url('fonts/proximanova-light-webfont.eot');
     src:         url('fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
                  url('fonts/proximanova-light-webfont.woff2') format('woff2'),
@@ -76,7 +76,7 @@ and Blueprint http://www.blueprintcss.org/
 }
 
 @font-face {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     src:         url('fonts/proximanova-reg-webfont.eot');
     src:         url('fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
                  url('fonts/proximanova-reg-webfont.woff2') format('woff2'),
@@ -89,7 +89,7 @@ and Blueprint http://www.blueprintcss.org/
 }
 
 @font-face {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     src:         url('fonts/proximanova-sbold-webfont.eot');
     src:         url('fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
                  url('fonts/proximanova-sbold-webfont.woff2') format('woff2'),
@@ -240,7 +240,7 @@ input,
 select,
 textarea {
     color:       #000;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
     line-height: 1.5;
 }
@@ -260,7 +260,7 @@ p {
 
 b,
 strong {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-weight: bold;
 }
 
@@ -499,7 +499,7 @@ input[type="email"]:focus:-ms-input-placeholder { color: transparent !important;
 5.1 Links
 --------------------------------------------------------------*/
 a {
-    font-family:     'Proxima Nova - SemiBold', sans-serif;
+    font-family:     'Proxima Nova - SemiBold';
     text-decoration: none;
     color:           #000;
 }
@@ -589,7 +589,6 @@ a:hover {
 }
 
 .main-navigation2 {
-    float:      right;
     margin-top: 30px;
     padding:    0;
 }
@@ -609,7 +608,7 @@ a:hover {
     display:         block;
     text-decoration: none;
     padding-bottom:  3px;
-    font-family:     'Proxima Nova - Bold', sans-serif;
+    font-family:     'Proxima Nova - Bold';
     font-size:       18px;
     font-weight:     700;
     color:           #000;
@@ -690,7 +689,7 @@ li.menu-item.menu-item-type-custom.on#menu-item-129 > a:after {
 .main-navigation2 ul ul {
     /*box-shadow:  0 3px 3px rgba(0, 0, 0, 0.2);*/
     height:      auto;
-    top:         2em;
+    top:         2.3em;
     left:        -999em;
     position:    absolute;
     width:       900px;
@@ -705,7 +704,7 @@ li.menu-item.menu-item-type-custom.on#menu-item-129 > a:after {
 
 .main-navigation2 ul ul a {
     width:       auto;
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   14px;
     font-weight: 400;
 }
@@ -1056,14 +1055,14 @@ object {
 }
 
 .head-logo-light {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-size:     27px;
     line-height:   50px;
     margin-bottom: -10px;
 }
 
 .head-logo-bold {
-    font-family:   'Proxima Nova - Bold', sans-serif;
+    font-family:   'Proxima Nova - Bold';
     font-size:     27px;
     line-height:   30px;
     margin-bottom: 30px;
@@ -1071,7 +1070,7 @@ object {
 
 .head-logo-light > a,
 .head-logo-light > a:visited {
-    font-family:     'Proxima Nova', sans-serif;
+    font-family:     'Proxima Nova';
     text-decoration: none;
     color:           #000;
 }
@@ -1083,27 +1082,33 @@ object {
 }
 
 .header-bottom-nav-area {
-    float:            left;
     background-color: #fff;
-    margin-top:       30px;
+    float:            right;
+    margin:           30px 0;
     width:            auto;
 }
 
 .site-footer {
-    width:            100%;
     background-color: #f1f0ef;
+    margin:           0 auto;
+    max-width:        1200px;
+    width:            100%;
 }
 
 .footer-widget-area {
-    width:       1200px;
-    text-align:  center;
-    margin-left: 113px;
+    text-align: center;
+}
+
+.footer-widget-area:before,
+.footer-widget-area:after {
+    clear:   both;
+    content: '';
+    display: table;
 }
 
 .footer-col-1, .footer-col-2, .footer-col-3 {
-    width:       400px;
-    float:       left;
-    margin-left: 100px;
+    width: 33.333333333%;
+    float: left;
 }
 
 .footer-col-2 input[type="email"],
@@ -1224,7 +1229,7 @@ object {
 
 .contact-text-box {
     float:       left;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-weight: 400;
     font-size:   14px;
     margin-top:  10px;
@@ -1232,7 +1237,7 @@ object {
 
 /* COPYRIGHT HTML STYLES */
 .copyright-area {
-    font-family:    'Proxima Nova', sans-serif;
+    font-family:    'Proxima Nova';
     font-size:      14px;
     padding-top:    30px;
     padding-bottom: 60px;
@@ -1304,17 +1309,24 @@ object {
     border-color: #eae9e9;
 }
 
+.teaser-area:before,
+.teaser-area:after {
+    clear:   both;
+    content: '';
+    display: table;
+}
+
 .main-row-1-col-1 {
     background-color: #000;
     color:            #fff;
 }
 
 .mr1c1-text-block, .mr3c2-text-block {
-    position:    absolute;
+    position:    relative;
     top:         0;
     left:        0;
     padding:     38px;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     width:       100%;
     font-weight: 700;
 }
@@ -1356,7 +1368,7 @@ object {
 }
 
 .box-read-more {
-    font-family: 'Proxima Nova - SemiBold, sans-serif', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-weight: 700;
     font-size:   14px;
     position:    absolute;
@@ -1429,7 +1441,7 @@ div#leader-widget-block {
 }
 
 h2#leader-widget-title {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   36px;
     color:       #fff;
@@ -1440,13 +1452,13 @@ h2#leader-widget-title {
 }
 
 .leader-name {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   14px;
 }
 
 .leader-title {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-weight: 400;
     font-size:   14px;
 }
@@ -1459,14 +1471,14 @@ div#footer-widget-block {
 }
 
 span#footer-widget-title {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-weight: 700;
     font-size:   16px;
 }
 
 ul#menu-resource-links {
     list-style:  none;
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-weight: 400;
     font-size:   14px;
 }
@@ -1479,35 +1491,31 @@ ul#menu-resource-links {
     margin-top:    -22px;
 }
 
-.menu-resource-links-container {
-    margin-left: -39px;
-}
-
 .menu-resource-links-container > div {
     text-align: left;
 }
 
 /* BLOCK SLIDER */
 .social-block-slider {
-    width:       80%;
-    margin:      138px auto auto 40px;
+    /*width:       80%;*/
+    /*margin:      138px auto auto 40px;*/
     padding-top: 100px;
     text-align:  center;
 }
 
 .bpcp-block-slider {
-    width:        80%;
-    margin-top:   50px;
-    margin-left:  auto;
-    margin-right: auto;
-    padding-top:  50px;
+    /*width:        80%;*/
+    /*margin-top:   50px;*/
+    /*margin-left:  auto;*/
+    /*margin-right: auto;*/
+    padding-top: 80px;
 }
 
 .img-swap {
     width:           100px;
     height:          150px;
     margin:          auto;
-    background:      url(images/bpc_color_stacked_blue.png) 0 0 no-repeat;
+    background:      url('images/bpc_color_stacked_blue.png') 0 0 no-repeat;
     background-size: 100px 300px;
 }
 
@@ -1516,7 +1524,7 @@ ul#menu-resource-links {
 }
 
 .html-slider-text {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   14px;
     text-align:  center;
 }
@@ -1551,7 +1559,7 @@ ul#menu-resource-links {
     margin-left: 924px;
     background:  #000;
     color:       #fff;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   14px;
 }
@@ -1576,7 +1584,7 @@ ul#menu-resource-links {
     margin-left: 70px;
     background:  #000;
     color:       #fff;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   14px;
 }
@@ -1608,7 +1616,7 @@ ul#menu-resource-links {
     margin-left: 450px;
     background:  #000;
     color:       #fff;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   14px;
 }
@@ -1633,7 +1641,7 @@ ul#menu-resource-links {
     margin-left: 172px;
     background:  #000;
     color:       #fff;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-weight: 700;
     font-size:   14px;
 }
@@ -1692,25 +1700,27 @@ ul#menu-resource-links {
 
 /* HEADER BREADCRUMB */
 .breadcrumbs {
-    margin:         15px auto 15px -5px;
-    font-family:    'Proxima Nova', sans-serif;
+    margin:         15px auto;
+    font-family:    'Proxima Nova';
     font-size:      14px;
     text-transform: uppercase;
 }
 
 .breadcrumbs a,
 .breadcrumbs a:visited {
-    font-family:     'Proxima Nova', sans-serif;
+    font-family:     'Proxima Nova';
     text-decoration: none;
     color:           #000;
 }
+
+.breadcrumbs > span:first-of-type a { padding-left: 0; }
 
 .breadcrumbs a:hover {
     color: #197bc2;
 }
 
 .breadcrumb-trail {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-size:     14px;
     margin-top:    15px;
     margin-bottom: 15px;
@@ -1762,7 +1772,7 @@ ul#menu-resource-links {
     width:            400px;
     height:           350px;
     background-color: #fff;
-    font-family:      'Proxima Nova', sans-serif;
+    font-family:      'Proxima Nova';
     color:            #000;
     border-bottom:    1px solid;
     border-right:     1px solid;
@@ -1800,7 +1810,7 @@ ul#menu-resource-links {
 }
 
 .name-box-head {
-    font-family:  'Proxima Nova - Bold', sans-serif;
+    font-family:  'Proxima Nova - Bold';
     font-size:    24px;
     margin-left:  20px;
     padding-left: 20px
@@ -1911,7 +1921,7 @@ ul#menu-resource-links {
     height:           350px;
     float:            left;
     background-color: #eae9e9;
-    font-family:      'Proxima Nova', sans-serif;
+    font-family:      'Proxima Nova';
     color:            #000;
 }
 
@@ -1968,7 +1978,7 @@ ul#menu-resource-links {
 }
 
 .bio-text-box-container {
-    font-family: 'Proxima Nova - Light', sans-serif;
+    font-family: 'Proxima Nova - Light';
     font-size:   16px;
     background:  #19a6e2;
     color:       #fff;
@@ -1996,7 +2006,7 @@ ul#menu-resource-links {
 .page-descr-box-full {
     width:       100%;
     height:      auto;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
 }
 
@@ -2004,7 +2014,7 @@ ul#menu-resource-links {
     float:         left;
     width:         100%;
     height:        auto;
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-weight:   400;
     font-size:     16px;
     margin-top:    -6px;
@@ -2016,7 +2026,7 @@ ul#menu-resource-links {
     float:         left;
     width:         800px;
     height:        auto;
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-weight:   400;
     font-size:     16px;
     margin-top:    33px;
@@ -2025,7 +2035,7 @@ ul#menu-resource-links {
 }
 
 .descr-text-4-box {
-    font-family:  'Proxima Nova', sans-serif;
+    font-family:  'Proxima Nova';
     float:        right;
     width:        auto;
     margin-right: 80px;
@@ -2113,7 +2123,7 @@ ul#menu-resource-links {
 }
 
 .descr-text-box {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
 }
 
@@ -2142,7 +2152,7 @@ ul#menu-resource-links {
     height:           350px;
     float:            left;
     background-color: #f8f8f8;
-    font-family:      'Proxima Nova', sans-serif;
+    font-family:      'Proxima Nova';
     color:            #000;
     overflow:         hidden;
 }
@@ -2164,7 +2174,7 @@ ul#menu-resource-links {
 .link-dir-area-black {
     float:         right;
     height:        100%;
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     color:         #000;
     margin-bottom: 50px;
     padding-right: 60px;
@@ -2286,7 +2296,7 @@ ul#menu-resource-links {
 .link-dir-area-white input[type="submit"],
 .link-dir-area-black input[type="submit"],
 .cat-button {
-    font-family:    'Proxima Nova - SemiBold', sans-serif;
+    font-family:    'Proxima Nova - SemiBold';
     background:     none repeat scroll 0 0 transparent;
     border-radius:  0;
     box-shadow:     none;
@@ -2360,7 +2370,7 @@ ul#menu-resource-links {
 }
 
 .school-box-head {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   24px;
 }
 
@@ -2369,7 +2379,7 @@ ul#menu-resource-links {
 }
 
 .school_info {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     color:       #000;
     font-weight: 400;
     font-size:   12px;
@@ -2399,9 +2409,9 @@ ul#menu-resource-links {
 [id*="page-quote"] {
     position:    relative;
     float:       left;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-weight: 400;
-    width:       400px;
+    width:       33.333333333%;
     height:      350px;
     padding:     35px;
 }
@@ -2417,7 +2427,7 @@ div#page-quote-yellow {
 }
 
 .head-quote-text {
-    font-family: 'Proxima Nova - Light', sans-serif;
+    font-family: 'Proxima Nova - Light';
     font-size:   25px;
     position:    absolute;
     left:        0;
@@ -2427,7 +2437,7 @@ div#page-quote-yellow {
 }
 
 .head-quote-text.yellowbg {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   25px;
 }
 
@@ -2460,7 +2470,7 @@ div#page-quote-yellow {
 
 .section-title {
     clear:        both;
-    font-family:  'Proxima Nova - SemiBold', sans-serif;
+    font-family:  'Proxima Nova - SemiBold';
     font-size:    18px;
     text-align:   center;
     width:        100%;
@@ -2492,7 +2502,7 @@ div#page-quote-yellow {
     width:       400px;
     background:  #fff;
     height:      auto;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-weight: 400;
     font-size:   14px;
     padding:     20px;
@@ -2501,7 +2511,7 @@ div#page-quote-yellow {
 
 .filter-head {
     font-weight: 800;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   18px;
     margin-left: 10px;
 }
@@ -2541,7 +2551,7 @@ div#page-quote-yellow {
 }
 
 .cat-text {
-    font-family:            'Oswald', sans-serif;
+    font-family:            'Oswald';
     text-transform:         uppercase;
     margin-left:            11px;
     width:                  120px;
@@ -2634,7 +2644,7 @@ div#page-quote-yellow {
 
 .blog-list {
     float:        left;
-    font-family:  'Proxima Nova', sans-serif;
+    font-family:  'Proxima Nova';
     max-width:    1200px;
     height:       auto;
     border-right: 1px solid #e6e6e6;
@@ -2668,7 +2678,7 @@ div#page-quote-yellow {
 }
 
 .blog-date-format {
-    font-family:   'Proxima Nova - Bold', sans-serif;
+    font-family:   'Proxima Nova - Bold';
     font-size:     24px;
     border-bottom: 2px solid;
     text-align:    right;
@@ -2696,18 +2706,18 @@ div#page-quote-yellow {
 }
 
 .blog-title {
-    font-family:    'Proxima Nova - Bold', sans-serif;
+    font-family:    'Proxima Nova - Bold';
     font-size:      24px;
     text-transform: uppercase;
 }
 
 .blog-text {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
 }
 
 .blog-read-more {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     float:       left;
     font-size:   16px;
     /*margin-left: 165px;*/
@@ -2740,7 +2750,7 @@ div#page-quote-yellow {
 }
 
 .blog-single-container {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     width:         100%;
     height:        auto;
     background:    #fff;
@@ -2816,12 +2826,12 @@ div#page-quote-yellow {
     display: none;
 }
 
-.search-form {
-    right:         200px;
-    top:           200px;
-    border-bottom: 1px solid;
-    width:         104%;
-}
+/*.search-form {*/
+/*right:         200px;*/
+/*top:           200px;*/
+/*border-bottom: 1px solid;*/
+/*width:         104%;*/
+/*}*/
 
 .search-form
 .search-submit {
@@ -2834,7 +2844,7 @@ div#page-quote-yellow {
 
 /* PRESS TABS */
 #tab-container-press {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-size:     14px;
     border-bottom: 1px solid;
     border-color:  #ebedee;
@@ -2892,7 +2902,7 @@ div#page-quote-yellow {
 }
 
 .press-text {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   16px;
     margin-top:  8%;
 }
@@ -2900,7 +2910,7 @@ div#page-quote-yellow {
 .awards-container-box {
     float:            left;
     width:            33%;
-    font-family:      'Proxima Nova', sans-serif;
+    font-family:      'Proxima Nova';
     text-align:       center;
     height:           100%;
     background-color: #fff;
@@ -2929,13 +2939,13 @@ div#page-quote-yellow {
 }
 
 .regular-text {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
     width:       63%;
 }
 
 .bold-text {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   16px;
 }
 
@@ -2977,7 +2987,7 @@ div#page-quote-yellow {
 .news-button input[type="submit"],
 .constantcontactwidget_form input[type="submit"] {
     border:         1px solid #000 !important;
-    font-family:    'Proxima Nova - SemiBold', sans-serif !important;
+    font-family:    'Proxima Nova - SemiBold' !important;
     color:          #000 !important;
     background:     none repeat scroll 0 0 transparent !important;
     border-radius:  0 !important;
@@ -3015,7 +3025,7 @@ div#page-quote-yellow {
 
 .news-button-foot input[type="submit"],
 .social-block-slider input[type="submit"] {
-    font-family:    'Proxima Nova - SemiBold', sans-serif;
+    font-family:    'Proxima Nova - SemiBold';
     color:          #000;
     background:     none;
     border-radius:  0;
@@ -3032,7 +3042,7 @@ div#page-quote-yellow {
 
 .news-button-tease input[type="submit"] {
     border:         0 solid #000;
-    font-family:    'Proxima Nova', sans-serif;
+    font-family:    'Proxima Nova';
     color:          #000;
     border-radius:  0;
     box-shadow:     none;
@@ -3064,7 +3074,7 @@ div#page-quote-yellow {
 }
 
 .board-commit-head {
-    font-family:    'Proxima Nova - SemiBold', sans-serif;
+    font-family:    'Proxima Nova - SemiBold';
     text-transform: uppercase;
 }
 
@@ -3075,12 +3085,12 @@ div#page-quote-yellow {
 }
 
 .board-names {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
 }
 
 /* Event Styles */
 .event-header-area {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     width:         100%;
     height:        350px;
     overflow:      hidden;
@@ -3155,13 +3165,13 @@ div#page-quote-yellow {
 }
 
 .descr-text-box-container.events-page {
-    font-family: 'Proxima Nova - Light', sans-serif !important;
+    font-family: 'Proxima Nova - Light' !important;
     background:  #19a6e2;
     padding:     0;
 }
 
 .descr-text-box-container.places {
-    font-family: 'Proxima Nova - Light', sans-serif !important;
+    font-family: 'Proxima Nova - Light' !important;
     background:  #fcd036;
     padding:     0;
 }
@@ -3182,7 +3192,7 @@ div#page-quote-yellow {
 }
 
 .descr-text-4-box.places {
-    font-family:  'Proxima Nova', sans-serif;
+    font-family:  'Proxima Nova';
     float:        right;
     width:        400px;
     margin-top:   -1px;
@@ -3193,7 +3203,7 @@ div#page-quote-yellow {
 .descr-text-event-links-box {
     float:         right;
     height:        100%;
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     padding-right: 20px;
     padding-top:   0;
     text-align:    left;
@@ -3201,7 +3211,7 @@ div#page-quote-yellow {
 }
 
 .descr-text-blue-links-box {
-    font-family:  'Proxima Nova', sans-serif;
+    font-family:  'Proxima Nova';
     float:        right;
     width:        360px;
     margin-right: 80px;
@@ -3235,7 +3245,7 @@ div#page-quote-yellow {
 }
 
 .widget-head {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     18px;
     width:         100%;
     text-align:    center;
@@ -3267,7 +3277,7 @@ div#page-quote-yellow {
 }
 
 .foil-title {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   16px;
 }
 
@@ -3280,7 +3290,7 @@ div#page-quote-yellow {
 }
 
 .deadline-head {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   18px;
     margin-top:  30px;
 }
@@ -3334,7 +3344,7 @@ div#page-quote-yellow {
 
 /* Board Page */
 .board-commit-head {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   18px;
 }
 
@@ -3434,7 +3444,7 @@ div#page-quote-yellow {
 
 /* Twitter */
 .twitter-head {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     14px;
     padding:       1%;
     margin-left:   6%;
@@ -3443,15 +3453,15 @@ div#page-quote-yellow {
 }
 
 .tp_recent_tweets {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-size:     14px;
     margin-right:  5%;
     margin-bottom: 10px;
 }
 
 .tp_recent_tweets li {
-    background:    none;
-    margin-bottom: -10px;
+    background: none;
+    padding-bottom: 10px;
 }
 
 .tp_recent_tweets li a {
@@ -3465,7 +3475,7 @@ div#page-quote-yellow {
 
 /* Archive Tabs */
 #tab-container-archive {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     font-size:     14px;
     border-bottom: 1px solid;
     border-color:  #ebedee;
@@ -3508,7 +3518,7 @@ div#page-quote-yellow {
     background:    #fff;
     border-bottom: 1px solid #ebedee;
     margin:        0;
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     16px;
     height:        49px;
 }
@@ -3568,7 +3578,7 @@ div#page-quote-yellow {
 }
 
 .archive-text {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   16px;
     margin-top:  15px;
 }
@@ -3580,7 +3590,7 @@ div#page-quote-yellow {
 
 /* Buildings */
 .building-header-area {
-    font-family:   'Proxima Nova', sans-serif;
+    font-family:   'Proxima Nova';
     width:         100%;
     background:    #fff;
     overflow:      hidden;
@@ -3663,7 +3673,7 @@ div#page-quote-yellow {
 }
 
 #contact-details {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     16px;
     margin-left:   22px;
     margin-top:    10px;
@@ -3671,11 +3681,16 @@ div#page-quote-yellow {
 }
 
 #contact-details2 {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   16px;
     margin-left: 30px;
     margin-top:  10px;
     opacity:     0.35;
+}
+
+.page-head-img {
+    float: left;
+    width: 66.666666667%;
 }
 
 .page-sub-text {
@@ -3756,7 +3771,7 @@ div#page-quote-yellow {
 
 .redNaoLegend {
     border:      none !important;
-    font-family: 'Proxima Nova - SemiBold', sans-serif !important;
+    font-family: 'Proxima Nova - SemiBold' !important;
     font-size:   16px !important;
     margin-top:  20px;
 }
@@ -3838,19 +3853,19 @@ div#page-quote-yellow {
 }
 
 .timeline-header-text {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     17px;
     margin-bottom: 10px;
 }
 
 .timeline-descr {
-    font-family: 'Proxima Nova - Light', sans-serif;
+    font-family: 'Proxima Nova - Light';
     font-size:   16px;
 }
 
 .timeline {
     width:       300px;
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   18px;
     text-align:  center;
     background:  #fff;
@@ -3871,7 +3886,7 @@ div#page-quote-yellow {
 
 .timeline-year {
     margin:         0 auto;
-    font-family:    'Proxima Nova - Bold', sans-serif;
+    font-family:    'Proxima Nova - Bold';
     font-size:      18px;
     display:        inline-block;
     padding-bottom: 40px;
@@ -3903,7 +3918,7 @@ div#page-quote-yellow {
 }
 
 .timeline-year-slider {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   18px;
     text-align:  center;
     background:  none;
@@ -3950,8 +3965,6 @@ div#page-quote-yellow {
 /* CONTENT SLIDER */
 /* ============================== This is for Overall Styling of the Content Gallery. */
 .gallery-container {
-    border:  2px solid olive;
-    margin:  10px auto;
     padding: 0;
     display: table;
 }
@@ -3960,7 +3973,6 @@ div#page-quote-yellow {
     width:      400px;
     height:     280px;
     background: #999;
-    /*border:2px solid green;*/
 }
 
 .slider {
@@ -3980,7 +3992,7 @@ div#page-quote-yellow {
 /* ============================== This is for Navigation Buttons Styling. */
 .slider-nav {
     display:    block; /* This is important to hide the buttons if jQuery is Not supported. */
-    margin-top: -12em;
+    margin-top: -10em;
     cursor:     pointer;
     padding:    10px;
 }
@@ -4089,7 +4101,7 @@ div#page-quote-yellow {
 }
 
 #white-links a {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     color:       #fff;
 }
 
@@ -4098,7 +4110,7 @@ div#page-quote-yellow {
 }
 
 #black-links a {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     color:       #000;
 }
 
@@ -4140,7 +4152,7 @@ div#page-quote-yellow {
 }
 
 .search-res-title {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   18px;
 }
 
@@ -4400,7 +4412,7 @@ input[type="checkbox"] {
 }
 
 .photo-caption-text {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   18px;
     margin:      30px;
 }
@@ -4422,31 +4434,31 @@ input[type="checkbox"] {
 /* EMAIL LINK STYLE */
 
 a[href^="mailto"] {
-    font-family:     'Proxima Nova - SemiBold', sans-serif;
+    font-family:     'Proxima Nova - SemiBold';
     color:           #000;
     text-decoration: none;
 }
 
 .white-link a[href^="mailto"] {
-    font-family:     'Proxima Nova - SemiBold', sans-serif;
+    font-family:     'Proxima Nova - SemiBold';
     color:           #fff;
     text-decoration: none;
 }
 
 .email-black a[href^="mailto"]:hover {
-    font-family:     'Proxima Nova - SemiBold', sans-serif;
+    font-family:     'Proxima Nova - SemiBold';
     color:           #69696c;
     text-decoration: underline;
 }
 
 .white-link a[href^="mailto"]:hover {
-    font-family:     'Proxima Nova - SemiBold', sans-serif;
+    font-family:     'Proxima Nova - SemiBold';
     color:           #69696c;
     text-decoration: underline;
 }
 
 .share-email {
-    font-family: 'Proxima Nova - SemiBold', sans-serif !important;
+    font-family: 'Proxima Nova - SemiBold' !important;
     color:       #000 !important;
 }
 
@@ -4470,7 +4482,7 @@ a[href^="mailto"] {
 
 /* EVENTS TEASER */
 .event-tease-date-format {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     18px;
     border-bottom: 2px solid;
     text-align:    right;
@@ -4479,12 +4491,12 @@ a[href^="mailto"] {
 }
 
 .event-tease-head {
-    font-family: 'Proxima Nova - SemiBold', sans-serif;
+    font-family: 'Proxima Nova - SemiBold';
     font-size:   20px;
 }
 
 .event-tease-sub-head {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     font-size:   16px;
 }
 
@@ -4515,7 +4527,7 @@ a[href^="mailto"] {
 
 /* Constant Contact Form Confirmation */
 .yay {
-    font-family:      'Proxima Nova - SemiBold', sans-serif;
+    font-family:      'Proxima Nova - SemiBold';
     font-size:        18px;
     width:            100%;
     height:           60px;
@@ -4554,7 +4566,7 @@ a[href^="mailto"] {
 .previous_link,
 .next_link,
 .page-numbers {
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
+    font-family:   'Proxima Nova - SemiBold';
     font-size:     16px;
     display:       inline-block;
     padding-left:  5px;
@@ -4766,7 +4778,7 @@ a[href^="mailto"] {
 }
 
 .grid-content {
-    height: inherit;
+    height:   inherit;
     position: relative;
 }
 
@@ -4800,7 +4812,7 @@ a[href^="mailto"] {
 }
 
 .grid-info-list h2 {
-    font-family: 'Proxima Nova - Bold', sans-serif;
+    font-family: 'Proxima Nova - Bold';
     font-size:   24px;
 }
 
@@ -4833,18 +4845,36 @@ a[href^="mailto"] {
     color:            #fff;
 }
 
+.grid.places:hover .grid-button {
+    background-color: #fcd036;
+    color:            #000;
+}
+
 .grid:hover .grid-info {
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.grid.places:hover .grid-info {
+    background-color: #fff;
 }
 
 .grid:hover .grid-info-list {
     display: none;
 }
 
+.grid.places .grid-info-list {
+    display: block;
+}
+
 /* ACTIVE STATES */
 .grid.active .grid-button {
     background: #19a6e2;
     color:      #fff;
+}
+
+.grid.places.active .grid-button {
+    background-color: #fcd036;
+    color:            #000;
 }
 
 .grid.active .grid-button:after {
@@ -4855,6 +4885,14 @@ a[href^="mailto"] {
     background-color: rgba(255, 255, 255, 0);
 }
 
+.grid.places.active .grid-info {
+    background-color: #fff;
+}
+
 .grid.active .grid-info-list {
     display: none;
+}
+
+.grid.places.active .grid-info-list {
+    display: block;
 }

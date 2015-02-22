@@ -48,7 +48,7 @@ get_header(); ?>
 				while ($loop->have_posts()) : $loop->the_post();
 					?>
 
-					<li class="grid">
+					<li class="grid places">
 						<div class="grid-content">
 							<div class="grid-info">
 								<ul class="grid-info-list">

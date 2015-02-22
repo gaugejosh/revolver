@@ -15,45 +15,53 @@ and open the template in the editor.
     .header-bottom-container {
         padding: 20px
     }
+
+    .footer-widget-area { margin: 0; }
+
     /* HEADER */
     .nygov-universal-navigation .l-header.nygov-header .l-region--header .pane-page-logo {
         margin: 0 !important;
     }
+
     .nygov-universal-navigation .l-header.nygov-header {
         top: 100px !important;
         /*left: 10px !important;*/
     }
-    
+
     .nygov-universal-navigation .l-header.nygov-header .pane-page-logo .pane-content img {
         /*padding-left: 30px !important;*/
     }
-    
+
     .header-bottom-logo {
         width: 200px;
     }
 
     .header-bottom-nav-area {
-        width: 100px;
+        width: 60px;
     }
-    
+
     .head-logo-bold,
     .head-logo-light {
         font-size: 20px;
+    }
+
+    .search-area {
+        display: none;
     }
 
     .menu-toggle {
         /*margin-left: 53px;*/
     }
 
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
+    .menu-toggle,
+    .main-navigation.toggled .nav-menu {
+        display: block;
+    }
 
-	.main-navigation ul {
-		display: none;
-	}
-        
+    .main-navigation ul {
+        display: none;
+    }
+
     .main-navigation2 {
         padding-left: 5px;
     }
@@ -61,22 +69,22 @@ and open the template in the editor.
     .menu-main-menu-container {
         margin-left: -140px;
     }
-        
-	.main-navigation2.toggled .nav-menu {
-		display: block;
-	}
 
-	.main-navigation2 ul {
-        clear:both;
+    .main-navigation2.toggled .nav-menu {
+        display: block;
+    }
+
+    .main-navigation2 ul {
+        clear:   both;
         display: none;
     }
 
     .main-navigation2 li {
-            clear: both;
+        clear: both;
     }
 
     .main-navigation2 ul ul {
-        position: relative;
+        position:   relative;
         margin-top: -30px;
     }
 
@@ -92,7 +100,7 @@ and open the template in the editor.
     .main-image-link {
         margin-left: 24px;
     }
-        
+
     .main-row-1-col-1,
     .main-row-1-col-2,
     .main-row-2-col-1,
@@ -101,20 +109,20 @@ and open the template in the editor.
     .main-row-1-col-3,
     .main-row-2-col-2,
     .main-row-3-col-2 {
-        clear: both;
-        width: 300px;
+        /*clear: both;*/
+        width: 100%;
     }
 
     .main-row-2-col-1 > img,
     .main-row-2-col-2 > img {
-        width: 300px;
-        height: 350px;
+        max-width: 100%;
+        height:    auto;
     }
 
     .mr3c2-head-text {
         font-size: 30px;
     }
-        
+
     .gallery-container,
     .gallery,
     .slides {
@@ -144,26 +152,27 @@ and open the template in the editor.
     .map-image-link,
     .building-image-link {
         margin-left: 0;
-        width: 300px;
-        margin-top: -107px;
+        width:       300px;
+        margin-top:  -107px;
     }
 
     .twitter-head {
-        font-size: 12px;
-        margin-top: 10px;
-        margin-left: 26px;
-        margin-bottom: 1px;
+        font-size:     12px;
+        margin-top:    0;
+        margin-left:   0;
+        margin-bottom: 20px;
+        padding:       0
     }
 
     .tp_recent_tweets {
-        font-size: 12px;
-        margin-right: 0;
+        font-size:     12px;
+        margin-right:  0;
         margin-bottom: -10px;
     }
 
     .twitter-follow {
-        margin-left: 30px;
-        font-size: 12px;
+        font-size:   12px;
+        margin-left: 0;
     }
 
     .event-box-date-area {
@@ -179,10 +188,9 @@ and open the template in the editor.
     }
 
     /*.header-box {*/
-        /*width: 300px;*/
-        /*height: 280px;*/
+    /*width: 300px;*/
+    /*height: 280px;*/
     /*}*/
-
     .exc-text,
     .exc-text-yellow {
         margin-top: -6px;
@@ -201,16 +209,15 @@ and open the template in the editor.
     }
 
     .descr-map-box {
-        clear:both;
+        clear: both;
     }
 
     /*.descr-pic-box,*/
     /*.descr-map-box {*/
-        /*width: 300px;*/
-        /*height: 280px;*/
-        /*overflow: hidden;*/
+    /*width: 300px;*/
+    /*height: 280px;*/
+    /*overflow: hidden;*/
     /*}*/
-
     .descr-pic-box img,
     .descr-map img,
     .tribe-events-event-image img {
@@ -219,9 +226,8 @@ and open the template in the editor.
 
     /*.bio-text-box-container,*/
     /*.descr-text-box-container {*/
-        /*width: 300px;*/
+    /*width: 300px;*/
     /*}*/
-
     .descr-text {
         width: 75%;
     }
@@ -245,10 +251,10 @@ and open the template in the editor.
     }
 
     .descr-text-4-box {
-        width: auto;
-        margin-top: -20px;
+        width:       auto;
+        margin-top:  -20px;
         margin-left: -100px;
-        float: left;
+        float:       left;
     }
 
     .link-dir-area2.short {
@@ -272,7 +278,7 @@ and open the template in the editor.
     }
 
     .event-box-date-area.home {
-        width: 30%;
+        width:  30%;
         height: auto;
     }
 
@@ -281,7 +287,7 @@ and open the template in the editor.
     }
 
     .name-box-head {
-        font-size: 20px;
+        font-size:   20px;
         padding-top: 1px;
     }
 
@@ -290,20 +296,20 @@ and open the template in the editor.
     }
 
     .blog-date-format {
-        font-family: 'Proxima Nova - Bold', sans-serif;
+        font-family:   'Proxima Nova - Bold', sans-serif;
         border-bottom: 2px solid;
-        text-align: right;
-        width: 100%;
+        text-align:    right;
+        width:         100%;
         margin-bottom: 10px;
     }
 
     .checker.big {
-        width: 15px;
+        width:  15px;
         height: 15px;
     }
 
     .styled-checks.colored {
-        margin-left: -5px;
+        margin-left:   -5px;
         margin-bottom: 5px;
     }
 
@@ -326,7 +332,7 @@ and open the template in the editor.
     .link-dir-area-black input[type="text"],
     .link-dir-area2 input[type="text"],
     .link-dir-area-white input[type="text"] {
-        width: 150px;
+        width:     150px;
         font-size: 12px;
     }
 
@@ -339,19 +345,24 @@ and open the template in the editor.
     }
 
     .header-box {
-        background-size: 300px 280px;
+        background-size:   300px 280px;
         background-repeat: no-repeat;
+    }
+
+    .page-head-img {
+        float: none;
+        width: 100%;
     }
 
     /* BLOG */
     .blog-date-cat {
         padding-right: 0;
-        width: 45%;
+        width:         45%;
     }
 
     .blog-date-cat {
-        padding-top: 60px;
-        float: left;
+        padding-top:   60px;
+        float:         left;
         padding-right: 30px;
     }
 
@@ -361,24 +372,24 @@ and open the template in the editor.
 
     .blog-read-more > a#rm-black-blog {
         text-decoration: none;
-        color: #000;
-        border: 1px solid #000;
-        padding: 5px 15px;
-        float: right;
-        margin-top: -60px;
-        margin-left: 0;
-        font-size: 12px;
-        margin-right: 110px;
+        color:           #000;
+        border:          1px solid #000;
+        padding:         5px 15px;
+        float:           right;
+        margin-top:      -60px;
+        margin-left:     0;
+        font-size:       12px;
+        margin-right:    110px;
     }
 
     #single-post.blog-list-cont {
-        width: 320px;
+        width:   320px;
         padding: 40px;
     }
 
     .blog-read-more.back {
         margin-left: 35px;
-        width: 300px;
+        width:       300px;
     }
 
     .event-image-area {
@@ -394,7 +405,7 @@ and open the template in the editor.
     }
 
     .blog-date-format {
-        width: 10%;
+        width:     10%;
         font-size: 20px;
     }
 
@@ -407,14 +418,14 @@ and open the template in the editor.
         float: left;
         /*width: 10%;*/
     }
-        
+
     .event-box-text-block {
-        width: 70%;
+        width:       70%;
         margin-left: 30%;
-        height: 80%;
-        padding: 50px 0 0;
+        height:      80%;
+        padding:     50px 0 0;
     }
-        
+
     .events#list-cat-boxes {
         clear: both;
         width: 100%;
@@ -423,19 +434,19 @@ and open the template in the editor.
     .blog-list-sized {
         margin-left: 100px;
         padding-top: 15px;
-        width: 35%;
+        width:       35%;
     }
 
     .cat-button.blog {
         margin-left: 5px;
-        margin-top: 0;
+        margin-top:  0;
     }
 
     .blog-list-cont {
-        margin-top: 10px;
+        margin-top:  10px;
         margin-left: 0;
-        width: 275px;
-        height: 300px;
+        width:       275px;
+        height:      300px;
     }
 
     .blog-text {
@@ -448,7 +459,7 @@ and open the template in the editor.
 
     .blog-read-more {
         margin-left: 100px;
-        margin-top: -25px;
+        margin-top:  -25px;
     }
 
     .blog-title {
@@ -464,17 +475,17 @@ and open the template in the editor.
     }
 
     .blog-list-sized {
-        width: 200px;
-        margin-left: 100px;
-        padding-top: 15px;
+        width:         200px;
+        margin-left:   100px;
+        padding-top:   15px;
         padding-right: 10px;
     }
 
     .cat-button.blog {
         margin-left: 5px;
-        margin-top:0;
+        margin-top:  0;
     }
-        
+
     /* BOARD */
     .board-col {
         clear: both;
@@ -482,17 +493,16 @@ and open the template in the editor.
     }
 
     .board-download {
-        font-size: 14px;
+        font-size:   14px;
         margin-left: 10px;
     }
 
     .board-commit-area {
         font-size: 14px;
-        width: 80%;
+        width:     80%;
     }
 
     /* PRESS */
-
     .awards-container-box {
         width: 100%;
     }
@@ -502,14 +512,14 @@ and open the template in the editor.
     }
 
     [id*="all-files"] {
-        font-size: 12px;
-        width: 300px;
+        font-size:   12px;
+        width:       300px;
         margin-left: -20px;
     }
 
     .download-link-area {
         /*margin-left: -20px;*/
-        margin-left:0;
+        margin-left: 0;
     }
 
     .flex-direction-nav .flex-next {
@@ -524,30 +534,30 @@ and open the template in the editor.
     /* RFP */
     #w9-box {
         margin-left: -162px;
-        margin-top: 40px;
+        margin-top:  40px;
     }
 
     #vendor-box {
-        margin-left:0;
-        margin-top: 10px;
+        margin-left: 0;
+        margin-top:  10px;
     }
 
     .download-form {
-        float: left;
-        position: relative;
+        float:       left;
+        position:    relative;
         margin-left: 16px;
-        margin-top: 28px;
+        margin-top:  28px;
     }
 
     .styled-checks > label {
-        margin-left:0;
-        font-size: 12px;
+        margin-left: 0;
+        font-size:   12px;
     }
 
     #rnField17, #rnField18, #rnField20 {
         margin-bottom: -20px;
-        margin-right: -100px !important;
-        float: left;
+        margin-right:  -100px !important;
+        float:         left;
     }
 
     #rnField20 {
@@ -555,35 +565,35 @@ and open the template in the editor.
     }
 
     .download-link-area#rfp {
-        margin-left:0;
+        margin-left: 0;
     }
 
     /* Community */
     .deadline-text {
-        margin-left: 40px;
+        margin-left:   40px;
         /*margin-bottom: 25px;*/
-        width: 100%;
-        margin-top: 5px;
+        width:         100%;
+        margin-top:    5px;
         margin-bottom: 20px;
     }
 
     .download-area {
-        padding-top: 10px;
+        padding: 20px;
     }
 
     .cat-button.buildings {
-        margin-top: 150px;
+        margin-top:  150px;
         margin-left: -145px;
     }
 
     /* Events */
     .cat-button {
         margin-left: 100px;
-        margin-top:0;
+        margin-top:  0;
     }
 
     .checker.big span {
-        width: 6px;
+        width:  6px;
         height: 6px;
         margin: 3px;
     }
@@ -606,11 +616,11 @@ and open the template in the editor.
 
     #events.cat-sel-col {
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top:  5px;
     }
 
     .filter-head {
-        margin-left:0;
+        margin-left: 0;
     }
 
     .event-filter-area {
@@ -623,7 +633,7 @@ and open the template in the editor.
     }
 
     [id*="all-files"] {
-        width: 300px;
+        width:       300px;
         margin-left: -40px;
     }
 
@@ -633,46 +643,45 @@ and open the template in the editor.
 
     /* FOOTER */
     .footer-col-1,
-    .footer-col-2 {
-        clear: both;
+    .footer-col-2,
+    .footer-col-3 {
+        float: none;
+        margin: 0;
         width: 100%;
-        margin-left: -15px;
     }
 
     .icon-box {
-        width: 35px;
+        width:     35px;
         font-size: 12px;
     }
 
-    div#footer-widget-block {
-        margin: 20px -40px;
-    }
+    .menu-resource-links-container { margin: 0; }
 
     .footer-logo-area {
         padding-top: 60px;
-        width: 320px;
+        width:       320px;
         margin-left: 20px;
-        text-align: center;
+        text-align:  center;
     }
-    
+
     .copyright-area {
-        font-family: 'Proxima Nova', sans-serif;
-        font-size: 14px;
-        padding-top:0;
-        padding-bottom:0;
-        padding-left: 20px;
+        font-family:    'Proxima Nova', sans-serif;
+        font-size:      14px;
+        padding-top:    0;
+        padding-bottom: 0;
+        padding-left:   20px;
     }
-    
+
     .footer-col-3 {
-        clear: both;
-        width: 100%;
+        clear:         both;
+        width:         100%;
         padding-right: 20px;
         /*margin-left: 75px;*/
     }
-    
+
     .footer-logo-area img {
         padding-left: 0;
-        margin-left: 0;
+        margin-left:  0;
     }
 }
 

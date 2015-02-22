@@ -110,8 +110,8 @@ add_action( 'widgets_init', 'bpca_master_widgets_init' );
  */
 function bpca_master_scripts() {
 	wp_enqueue_style( 'bpca-master-style', get_stylesheet_uri() );
-        wp_enqueue_style( 'bpca-master-tablet-style', get_template_directory_uri() . '/tablet-styles.css', array(), '', 'screen and (max-width: 1024px)');
-        wp_enqueue_style( 'bpca-master-phone-style', get_template_directory_uri() . '/phone-styles.css', array(), '', 'screen and (max-width: 414px)');
+        wp_enqueue_style( 'bpca-master-tablet-style', get_template_directory_uri() . '/tablet-styles.css', array(), '', 'screen and (max-width: 1023px)');
+        wp_enqueue_style( 'bpca-master-phone-style', get_template_directory_uri() . '/phone-styles.css', array(), '', 'screen and (max-width: 479px)');
         wp_enqueue_style( 'bpca-master-calendario-main-style', get_template_directory_uri() . '/calendar.css');
         wp_enqueue_style( 'bpca-master-calendario-style', get_template_directory_uri() . '/custom_2.css');
         wp_enqueue_style( 'bpca-master-icheck-style', get_template_directory_uri() . '/js/iCheck/skins/minimal/minimal.css');
