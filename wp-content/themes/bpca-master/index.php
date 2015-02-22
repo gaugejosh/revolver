@@ -11,10 +11,10 @@
  * @package bpca-master
  */
 // get the two swappable homepage images
-$homepagefull = "";
-$homepage800 = "";
-$cat1 = "";
-$cat2 = "";
+$homepagefull = '';
+$homepage800 = '';
+$cat1 = '';
+$cat2 = '';
 if (is_mobile()) {
     $cat1 = "homepage-mobile";
     $cat2 = "homepage-800-mobile";
@@ -58,7 +58,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
                     <div class="main-image" style="margin-bottom: -8px">
-                        <img src="<?php $homepagefull; ?>" />
+                        <img src="<?=$homepagefull;?>" />
                            <div class="main-image-link">
                                <div class="main-image-link-text">
                                    <a href="/about-2/who-we-are">
@@ -66,99 +66,86 @@ get_header(); ?>
                                </div>
                             </div> 
                     </div>
-                    <!--<div class="main-row-1"> -->
-                        <div class="main-row-1-col-1">
-                            <div class="mr1c1-text-block">
-                                <div class="mr1c1-head-text">
-                                    NEED A BATTERY PARK CITY PERMIT?
-                                </div>
-                                <div class="mr1c1-sub-text">
-                                    VISIT OUR NEW PERMIT PAGE TO GET STARTED!
-                                </div>
+
+                    <div class="main-row-1-col-1">
+                        <div class="mr1c1-text-block">
+                            <div class="mr1c1-head-text">
+                                NEED A BATTERY PARK CITY PERMIT?
                             </div>
-                            <div class="box-read-more">
-                                    <a id="rm-white" href="/apply/permits">READ MORE</a>
+                            <div class="mr1c1-sub-text">
+                                VISIT OUR NEW PERMIT PAGE TO GET STARTED!
                             </div>
                         </div>
-                        <div class="main-row-1-col-2">
-                            <div class="gallery-container">          
-                                <div class="gallery">
-                                    <div class="slider">
-                                        <ul>
-                                            <li>
-                                                <div class="slides">
-                                                    <div class="slides_content">
-                                                        <div class="social-block-slider">
-                                                            <a href="https://twitter.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;
-                                                            <a href="https://www.facebook.com/bpca.ny" target="_blank" class="social-icon-link"><i class="fa fa-facebook fa-3x"></i></a> &nbsp;&nbsp;
-                                                            <!-- <a href="http://instagram.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-instagram fa-3x"></i></a>-->
-                                                            <br /><br /><br />
-                                                            <p class="html-slider-text" id="social-slide">Stay in the loop with social media</p>
-                                                            </div>
+                        <div class="box-read-more">
+                                <a id="rm-white" href="/apply/permits">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="main-row-1-col-2">
+                        <div class="gallery-container">
+                            <div class="gallery">
+                                <div class="slider">
+                                    <ul>
+                                        <li>
+                                            <div class="slides">
+                                                <div class="slides_content">
+                                                    <div class="social-block-slider">
+                                                        <a href="//twitter.com/bpca_ny" target="_blank" class="social-icon-link"><i class="fa fa-twitter fa-3x"></i></a>
+                                                        <a href="//facebook.com/bpca.ny" target="_blank" class="social-icon-link"><i class="fa fa-facebook fa-3x"></i></a>
+                                                        <p class="html-slider-text" id="social-slide">Stay in the loop with social media</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
+                                        </li>
 
-                                            <li>
-                                                <div class="slides">
-                                                    <div class="slides_content">
-                                                        <div class="social-block-slider">
-                                                            <!--
-                                                            <form method="post" action="http://bpca.revolverbranding.com/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                                                            <div>
-                                                            <input class="newsletter-email" type="email" name="ne" size="100" placeholder=" ENTER EMAIL ADDRESS" required></div><br />
-                                                            <div class="news-button">
-                                                                    <input class="newsletter-submit" type="submit" value="SIGN UP"/>
-                                                            </div>
-                                                            </form>-->
-                                                            <form id="sf_widget_constantcontact_2_form" class="constantcontactwidget_form" onsubmit="return sf_widget_constantcontact_2_submit(this);">
-                                                            <input type="hidden" value="General Interest" name="grp">
-                                                            <input class="input" type="text" placeholder="ENTER EMAIL ADDRESS" name="eml">
-                                                            <input type="submit" value="SIGN UP">
-                                                            </form>
-                                                            <script>
-                                                                function sf_widget_constantcontact_2_submit(n){for(var a=n.querySelectorAll("input"),i=0,eml=false,val=["action=constantcontactadd"];i<a.length;i++)if(a[i].name){if(a[i].name=="req"){if(!a[i].checked){alert("Consent required");return false;}}else{if(!(a[i].name!="eml"||!a[i].value))eml=true;val.push(a[i].name+"="+encodeURIComponent(a[i].value));}}if(!eml){alert("Please enter an email address");return false;}var xml=new XMLHttpRequest();xml.open("POST","http://bpca.revolverbranding.com/wp-admin/admin-ajax.php",true);xml.setRequestHeader("Content-type","application/x-www-form-urlencoded");xml.onreadystatechange=function(){if(this.readyState==4){if(this.status==200){if(this.responseText)alert(this.responseText);else n.innerHTML="<input type=\"text\" name=\"eml\" class=\"input\" placeholder=\"ENTER EMAIL ADDRESS\"><input type=\"submit\" value=\"Submit\"><div class=\"yay\">Thank You For Subscribing!</div>";}else alert(this.statusText);}};xml.send(val.join(String.fromCharCode(38)));return false;}
-                                                                </script>
-                                                            <p class="html-slider-text" id="news-slide">Stay informed by signing up for our newsletter</p>
-                                                            </div>
-                                                    </div>
+                                        <li>
+                                            <div class="slides">
+                                                <div class="slides_content">
+                                                    <div class="social-block-slider">
+                                                        <form id="sf_widget_constantcontact_2_form" class="constantcontactwidget_form" onsubmit="return sf_widget_constantcontact_2_submit(this);">
+                                                        <input type="hidden" value="General Interest" name="grp">
+                                                        <input class="input" type="text" placeholder="ENTER EMAIL ADDRESS" name="eml">
+                                                        <input type="submit" value="SIGN UP">
+                                                        </form>
+                                                        <script>
+                                                            function sf_widget_constantcontact_2_submit(n){for(var a=n.querySelectorAll("input"),i=0,eml=false,val=["action=constantcontactadd"];i<a.length;i++)if(a[i].name){if(a[i].name=="req"){if(!a[i].checked){alert("Consent required");return false;}}else{if(!(a[i].name!="eml"||!a[i].value))eml=true;val.push(a[i].name+"="+encodeURIComponent(a[i].value));}}if(!eml){alert("Please enter an email address");return false;}var xml=new XMLHttpRequest();xml.open("POST","http://bpca.revolverbranding.com/wp-admin/admin-ajax.php",true);xml.setRequestHeader("Content-type","application/x-www-form-urlencoded");xml.onreadystatechange=function(){if(this.readyState==4){if(this.status==200){if(this.responseText)alert(this.responseText);else n.innerHTML="<input type=\"text\" name=\"eml\" class=\"input\" placeholder=\"ENTER EMAIL ADDRESS\"><input type=\"submit\" value=\"Submit\"><div class=\"yay\">Thank You For Subscribing!</div>";}else alert(this.statusText);}};xml.send(val.join(String.fromCharCode(38)));return false;}
+                                                            </script>
+                                                        <p class="html-slider-text" id="news-slide">Stay informed by signing up for our newsletter</p>
+                                                        </div>
                                                 </div>
-                                            </li>
+                                            </div>
+                                        </li>
 
-                                            <li>
-                                                <div class="slides">
-                                                    <div class="slides_content">
-                                                        <div class="bpcp-block-slider">
-                                                            <a href="http://bpcparks.org" target="_blank">
+                                        <li>
+                                            <div class="slides">
+                                                <div class="slides_content">
+                                                    <div class="bpcp-block-slider">
+                                                        <a href="http://bpcparks.org" target="_blank">
                                                             <div class="img-swap" onclick="revertImg();"></div>
-                                                            </a>
-                                                            <br />
-                                                            <p class="html-slider-text" id="parks-slide">Check out what's happening in the Parks</p>
-                                                            </div>
+                                                        </a>
+                                                        <p class="html-slider-text" id="parks-slide">Check out what's happening in the Parks</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Navigation Button Controls -->
-
-                                    <div class="slider-nav">
-                                        <button class="backbtn" data-dir="prev">&nbsp;</button>
-                                        <button class="nextbtn" data-dir="next" style="float:right;">&nbsp;</button>
-                                    </div>
-
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <!-- Pagination Controls -->
-                                <div class="slider-pagi">
-                                    <div class="pagi-container">
-                                        <ul></ul>   <!-- Here Paginations will be dynamically created, depending on Number of elements in the list. -->                  
 
-                                    </div>
+                                <!-- Navigation Button Controls -->
+
+                                <div class="slider-nav">
+                                    <button class="backbtn" data-dir="prev">&nbsp;</button>
+                                    <button class="nextbtn" data-dir="next" style="float:right;">&nbsp;</button>
+                                </div>
+
+                            </div>
+                            <!-- Pagination Controls -->
+                            <div class="slider-pagi">
+                                <div class="pagi-container">
+                                    <ul></ul>   <!-- Here Paginations will be dynamically created, depending on Number of elements in the list. -->
                                 </div>
                             </div>
-                            <?php //if( function_exists('cyclone_slider') ) cyclone_slider('scrolling-teaser-box'); ?>
                         </div>
+                    </div>
                         <div class="main-row-1-col-3">
                             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Home Page - Leadership Block') ) : ?>  
           <?php endif; ?>
@@ -178,7 +165,7 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="main-row-2-col-2">
-                            <img src="<?php $homepage800;?>" />
+                            <img src="<?=$homepage800;?>" />
                             <div class="building-image-link">
                                <div class="building-image-link-text">
                                    <a href="/residential-life/buildings?leed=yes">
@@ -226,7 +213,7 @@ get_header(); ?>
                                     echo '  </div>';
                                     $categories = tribe_get_event_cat_slugs($curevent->ID);
                                     if($categories){
-                                        $showcategory = "";
+                                        $showcategory = '';
                                         foreach($categories as $category) {
                                             echo '<div class="';
                                             switch ($category) {

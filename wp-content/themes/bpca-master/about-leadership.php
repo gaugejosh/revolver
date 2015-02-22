@@ -19,7 +19,7 @@ get_header(); ?>
 		<!-- .breadcrumbs -->
 
 		<div class="about-leaders">
-			<ul class="leaders">
+			<ul class="grids">
 				<?php
 				$args = array(
 					'post_type'      => 'leaders',
@@ -39,27 +39,27 @@ get_header(); ?>
 				while ($loop->have_posts()) : $loop->the_post();
 					?>
 
-					<li class="leader">
-						<div class="leader-content">
-							<div class="leader-info">
-								<ul class="leader-info-list">
+					<li class="grid">
+						<div class="grid-content">
+							<div class="grid-info">
+								<ul class="grid-info-list">
 									<li><h2><?php the_title() ?></h2></li>
 									<li><?php the_field('position_title') ?></li>
 									<li><?php the_field('confirmed_on') ?></li>
 								</ul>
 							</div>
-							<!-- .leader-info -->
+							<!-- .grid-info -->
 
-							<div class="leader-image">
+							<div class="grid-image">
 								<?php the_post_thumbnail() ?>
 							</div>
-							<!-- .leader-image -->
+							<!-- .grid-image -->
 
-							<div class="leader-button"></div>
+							<div class="grid-button"></div>
 						</div>
-						<!-- .leader-content -->
+						<!-- .grid-content -->
 
-						<div class="leader-description">
+						<div class="grid-description">
 							<div class="left-col">
 								<p><?php the_field('bio_column_1') ?></p>
 							</div>
@@ -69,12 +69,12 @@ get_header(); ?>
 							</div>
 							<!-- .right-col -->
 						</div>
-						<!-- .leader-description -->
+						<!-- .grid-description -->
 					</li>
 
 					<?php // insert the description container in the correct place ?>
 					<?php if ($i % 3 === 0): ?>
-						<li class="leader-alt">
+						<li class="grid-alt">
 						</li>
 					<?php endif; ?>
 
@@ -84,42 +84,11 @@ get_header(); ?>
 				<?php endwhile; ?>
 			</ul>
 		</div>
-		<!-- .about-leaders -->
+		<!-- .about-grids -->
 	</main>
 </div><!-- #primary -->
 
-<script>
-
-	// wait for document to load before running script
-	$(document).ready(function () {
-
-		// cache some variables
-		var $leader = $('.leader');
-
-		// setup click action on .leader-button element
-		$leader.on('click', function () {
-			// define some variables
-			var $target = $(this).find('.leader-description').parent().nextAll('.leader-alt:first');
-
-			// toggle the active class on current element
-			$(this).toggleClass('active');
-
-			// close any open description containers
-			if ($('.leader').not($(this)).hasClass('active')) {
-				$('.leader').removeClass('active');
-			}
-
-			// copy description and append it to container
-			var $content = $(this).find('.leader-description').html();
-
-			// display content
-			$target.html($content).slideToggle();
-
-		});
-
-	});
-
-</script>
+<script src="http://revolver.dev/wp-content/themes/bpca-master/js/bpca-grid.js"></script>
 
 <?php // wordpress footer hook. do not remove or bearshark will find you ?>
 <?php get_footer(); ?>

@@ -21,7 +21,7 @@ $(document).ready(function () {
         var $content = $(this).find('.grid-description').html();
 
         // display content
-        $target.html($content).slideToggle();
+        $target.html($content).show();
 
     });
 

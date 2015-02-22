@@ -126,8 +126,6 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust:     100%;
     box-sizing:               border-box;
-    /*-ms-touch-action:         manipulation;*/
-    /*touch-action:             manipulation;*/
 }
 
 *,
@@ -421,11 +419,6 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-    /*
-        color: #666;
-    border: 1px solid #ccc;
-    border-radius: 3px;
- */
     border:             1px solid;
     line-height:        20px;
     padding:            3px;
@@ -596,26 +589,20 @@ a:hover {
 }
 
 .main-navigation2 {
-    clear:        both;
-    display:      block;
-    float:        right;
-    width:        100%;
-    margin-top:   30px;
-    padding-left: 310px;
+    float:      right;
+    margin-top: 30px;
+    padding:    0;
 }
 
 .main-navigation2 ul {
-    float:        left;
-    list-style:   none;
-    margin:       2px -80px 0;
-    padding-left: 15px;
+    list-style: none;
 }
 
 .main-navigation2 li {
-    float:    left;
-    position: relative;
+    display:  inline-block;
     margin:   10px;
     padding:  5px 5px;
+    position: relative;
 }
 
 .main-navigation2 a {
@@ -626,6 +613,13 @@ a:hover {
     font-size:       18px;
     font-weight:     700;
     color:           #000;
+}
+
+.menu-main-menu-container:before,
+.menu-main-menu-container:after {
+    clear:   both;
+    content: '';
+    display: table;
 }
 
 /* blue underline */
@@ -661,7 +655,6 @@ li.menu-item.menu-item-type-custom.on#menu-item-130 > a:after {
 }
 
 /* yellow underline */
-
 li.menu-item#menu-item-92 a:after,
 li.menu-item#menu-item-127 a:after,
 li.menu-item#menu-item-129 a:after {
@@ -695,15 +688,7 @@ li.menu-item.menu-item-type-custom.on#menu-item-129 > a:after {
 }
 
 .main-navigation2 ul ul {
-    box-shadow:  0 3px 3px rgba(0, 0, 0, 0.2);
-    /*
-        float: left;
-    position: absolute;
-    top: 1.5em;
-    left: -999em;
-    z-index: 99999;
-        display: inline-block;
-        */
+    /*box-shadow:  0 3px 3px rgba(0, 0, 0, 0.2);*/
     height:      auto;
     top:         2em;
     left:        -999em;
@@ -1052,16 +1037,21 @@ object {
 }
 
 .header-bottom-container {
-    clear:      both;
     max-width:  1200px;
     margin-top: 20px;
+}
+
+.header-bottom-container:before,
+.header-bottom-container:after {
+    clear:   both;
+    content: '';
+    display: table;
 }
 
 .header-bottom-logo {
     position:         relative;
     float:            left;
     background-color: #fff;
-    width:            270px;
     margin-top:       20px;
 }
 
@@ -1096,8 +1086,7 @@ object {
     float:            left;
     background-color: #fff;
     margin-top:       30px;
-    padding-bottom:   30px;
-    width:            930px;
+    width:            auto;
 }
 
 .site-footer {
@@ -1241,17 +1230,6 @@ object {
     margin-top:  10px;
 }
 
-/*
-.contact-text-box > a {
-    text-decoration: none;
-    color: #000;
-}
-
-.contact-text-box > a:hover {
-    text-decoration: none;
-    color: #000;
-}
-*/
 /* COPYRIGHT HTML STYLES */
 .copyright-area {
     font-family:    'Proxima Nova', sans-serif;
@@ -1260,12 +1238,6 @@ object {
     padding-bottom: 60px;
 }
 
-/*
-.copyright-area > a {
-    text-decoration: none;
-    color: #000;
-}
-*/
 /* TEASER SETS WIDGET STYLES */
 .teaser-sets {
     float:      left;
@@ -1720,7 +1692,6 @@ ul#menu-resource-links {
 
 /* HEADER BREADCRUMB */
 .breadcrumbs {
-    width:          1200px;
     margin:         15px auto 15px -5px;
     font-family:    'Proxima Nova', sans-serif;
     font-size:      14px;
@@ -2445,17 +2416,6 @@ div#page-quote-yellow {
     color:      #000;
 }
 
-.page-head-img {
-    float:  left;
-    width:  800px;
-    height: 350px;
-}
-
-.page-head-img > img {
-    max-width:  100%;
-    max-height: 100%;
-}
-
 .head-quote-text {
     font-family: 'Proxima Nova - Light', sans-serif;
     font-size:   25px;
@@ -2493,23 +2453,21 @@ div#page-quote-yellow {
     margin-top: -12px;
 }
 
-.diagram {
-    clear:         both;
-    width:         1200px;
-    margin-bottom: -7px;
-}
+/*.diagram {*/
+/*clear: both;*/
+/*width: 1200px;*/
+/*}*/
 
 .section-title {
-    clear:         both;
-    font-family:   'Proxima Nova - SemiBold', sans-serif;
-    font-size:     18px;
-    text-align:    center;
-    width:         100%;
-    border-top:    1px solid;
-    border-bottom: 1px solid;
-    border-color:  #ebedee;
-    background:    #fff;
-    padding:       15px;
+    clear:        both;
+    font-family:  'Proxima Nova - SemiBold', sans-serif;
+    font-size:    18px;
+    text-align:   center;
+    width:        100%;
+    border-top:   1px solid;
+    border-color: #ebedee;
+    background:   #fff;
+    padding:      15px;
 }
 
 #notop {
@@ -2863,25 +2821,6 @@ div#page-quote-yellow {
     top:           200px;
     border-bottom: 1px solid;
     width:         104%;
-}
-
-.search-field {
-    /*
-        background-image: url(images/search-glass.png);
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
- */
-}
-
-.search-field:focus {
-    /*
-	background-color: #fff;
-	border: 2px solid #c3c0ab;
-	cursor: text;
-	outline: 0;
-	width: 230px;
-        */
 }
 
 .search-form
@@ -3870,25 +3809,28 @@ div#page-quote-yellow {
 }
 
 .timeline-info-container {
-    clear:      both;
     float:      left;
-    width:      400px;
-    height:     350px;
+    height:     auto;
     background: #19a6e2;
     overflow:   hidden;
     border-top: 2px solid #eae9e9;
 }
 
-.timeline-photo {
-    width:  800px;
-    height: 350px;
-    float:  left;
-    border: none;
+@media (min-width: 1024px) {
+    .timeline-info-container {
+        width: 33.33333333%;
+    }
+
+    .timeline-photo {
+        width:  66.66666667%;
+        height: auto;
+        float:  left;
+        border: none;
+    }
 }
 
 .time-descr-box {
     float:      left;
-    width:      400px;
     padding:    40px;
     color:      #fff;
     text-align: left;
@@ -3897,7 +3839,7 @@ div#page-quote-yellow {
 
 .timeline-header-text {
     font-family:   'Proxima Nova - SemiBold', sans-serif;
-    font-size:     18px;
+    font-size:     17px;
     margin-bottom: 10px;
 }
 
@@ -3933,7 +3875,6 @@ div#page-quote-yellow {
     font-size:      18px;
     display:        inline-block;
     padding-bottom: 40px;
-    background:     url(images/timeline-line.jpg) center bottom no-repeat;
 }
 
 .timeline-year:after {
@@ -4045,21 +3986,21 @@ div#page-quote-yellow {
 }
 
 .backbtn {
-    position:            relative;
-    border:              none;
-    background:          url('images/arrow_left.jpg') no-repeat;
-    margin-left:         9px;
-    width:               13px;
-    height:              24px;
+    position:    relative;
+    border:      none;
+    background:  url('images/arrow_left.jpg') no-repeat;
+    margin-left: 9px;
+    width:       13px;
+    height:      24px;
 }
 
 .nextbtn {
-    position:            relative;
-    border:              none;
-    background:          url('images/arrow_right.jpg') 0 100% no-repeat;
-    width:               13px;
-    height:              24px;
-    margin-right:        9px;
+    position:     relative;
+    border:       none;
+    background:   url('images/arrow_right.jpg') 0 100% no-repeat;
+    width:        13px;
+    height:       24px;
+    margin-right: 9px;
 }
 
 .backbtn:hover,
@@ -4429,23 +4370,6 @@ input[type="checkbox"] {
     margin-bottom: 30px;
 }
 
-/* slider arrow buttons */
-.ms-skin-default .ms-nav-next,
-.ms-skin-default .ms-nav-prev {
-    /*
-    opacity: 1;
-    width: 30px;
-    background: url("skins/light-skin-1.png") repeat scroll -89px -26px transparent;
-    height: 40px;
-    cursor: pointer;
-    top: 50%;
-    left: 30px;
-    margin-top: -360px;
-    position: absolute;
-    z-index: 9999;
-    */
-}
-
 /* slider tabs and tab pointer */
 .ms-tabs .ms-thumb-frame {
     background-color: #fff !important;
@@ -4737,6 +4661,26 @@ a[href^="mailto"] {
     margin-bottom: 10px;
 }
 
+@media (min-width: 48em) {
+    .nygov-universal-footer .l-footer .pane-menu-menu-footer-menu .menu li,
+    .nygov-universal-footer .l-footer .pane-menu-menu-nygov-footer-menu .menu li {
+        float:        left !important;
+        margin-right: 0 !important;
+        margin-top:   10px !important;
+        width:        15% !important;
+    }
+
+    .nygov-universal-footer .l-footer {
+        min-height: 70px !important;
+    }
+
+    .pane-content p { margin-bottom: 0; }
+}
+
+@media screen and (min-width: 1024px) {
+    .scroll-back-to-top-wrapper { display: none; }
+}
+
 /****************************************************************************************/
 /* BOX GRID STYLES
 /****************************************************************************************/
@@ -4754,6 +4698,7 @@ a[href^="mailto"] {
 .grid {
     border-right:  1px solid #ebedee;
     border-bottom: 1px solid #ebedee;
+    height:        350px;
     position:      relative;
 }
 
@@ -4821,6 +4766,7 @@ a[href^="mailto"] {
 }
 
 .grid-content {
+    height: inherit;
     position: relative;
 }
 
