@@ -1206,7 +1206,7 @@ sfMultipleRadioElement.prototype.GenerateInlineElement=function()
             checked='';
 
         html+='<div class="radio'+orientationClass+'"><label class="redNaoRadio '+orientationClass+'" for="radios-0">\
-                    <input '+checked+' class="form-control redNaoInputRadio" type="radio" name="'+this.GetPropertyName()+'"  value="'+RedNaoEscapeHtml(this.Options.Options[i].value)+'" '+checked+'>'+RedNaoEscapeHtml(rnJQuery.trim(this.Options.Options[i].label))+'</input>\
+                    <input '+checked+' class="form-control redNaoInputRadio" type="radio" name="'+this.Id+'"  value="'+RedNaoEscapeHtml(this.Options.Options[i].value)+'" '+checked+'>'+RedNaoEscapeHtml(rnJQuery.trim(this.Options.Options[i].label))+'</input>\
                 </label></div>';
 
         checked="";
@@ -1363,7 +1363,7 @@ sfMultipleCheckBoxElement.prototype.GenerateInlineElement=function()
             checked='';
 
         html+='<div class="checkbox'+orientationClass+'"><label class="redNaoCheckBox'+orientationClass+'" for="radios-0">\
-                    <input type="checkbox" class="redNaoInputCheckBox" name="'+this.GetPropertyName()+'"  value="'+RedNaoEscapeHtml(this.Options.Options[i].value)+'" '+checked+'/>'+RedNaoEscapeHtml(this.Options.Options[i].label)+'\
+                    <input type="checkbox" class="redNaoInputCheckBox" name="'+this.Id+'"  value="'+RedNaoEscapeHtml(this.Options.Options[i].value)+'" '+checked+'/>'+RedNaoEscapeHtml(this.Options.Options[i].label)+'\
                 </label></div>';
 
         checked="";
@@ -2957,6 +2957,12 @@ sfSearchableList.prototype.GetValueString=function()
         select2SelectedValues = this.Select2.select2('val');
         if(select2SelectedValues==null)
             select2SelectedValues=[];
+        if(!rnJQuery.isArray(select2SelectedValues))
+        {
+            var aux=select2SelectedValues;
+            select2SelectedValues=[];
+            select2SelectedValues.push(aux);
+        }
     }
     else
         select2SelectedValues=this.GetSelectedValuesFromNormalSelect();

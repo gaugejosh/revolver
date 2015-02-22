@@ -24,12 +24,12 @@ function RedNaoCreateColumn(options)
     if(elementName=='rednaomultiplecheckboxes'||elementName=='rednaosearchablelist')
         return RedNaoMultipleCheckBoxesColumn(options);
     if(elementName=='rednaoselectbasic')
-        return RedNaoTextInputColumn(options);
+        return RedNaoTextOrAmountColumn(options);
 
     if(elementName=='rednaotextarea')
         return RedNaoTextInputColumn(options);
     if(elementName=='rednaomultipleradios')
-        return RedNaoTextInputColumn(options);
+        return RedNaoTextOrAmountColumn(options);
     if(elementName=='rednaodatepicker')
         return RedNaoDatePicker(options);
     if(elementName=='rednaoname')
@@ -55,10 +55,25 @@ function GetObjectOrNull(rowObject,options)
 
 }
 
+function RedNaoTextOrAmountColumn(options)
+{
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    {
+        try{
+            var data=GetObjectOrNull(rowObject,cellOptions);
+            if(data==null)
+                return '';
+            return RedNaoEscapeHtml(data.value);
+        }catch(exception)
+        {
+            return '';
+        }
+    }}];
+}
 
 function RedNaoTextInputColumn(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
         var data=GetObjectOrNull(rowObject,cellOptions);
@@ -74,7 +89,7 @@ function RedNaoTextInputColumn(options)
 
 function RedNaoRecurrenceColumn(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
@@ -107,7 +122,7 @@ function RedNaoRecurrenceColumn(options)
 
 function RedNaoCheckboxInputColumn(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
         var data=GetObjectOrNull(rowObject,cellOptions);
@@ -123,7 +138,7 @@ function RedNaoCheckboxInputColumn(options)
 
 function RedNaoMultipleCheckBoxesColumn(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
         var data=GetObjectOrNull(rowObject,cellOptions);
@@ -143,7 +158,7 @@ function RedNaoMultipleCheckBoxesColumn(options)
 
 function RedNaoDatePicker(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
@@ -165,7 +180,7 @@ function RedNaoDatePicker(options)
 
 function RedNaoName(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
@@ -182,7 +197,7 @@ function RedNaoName(options)
 
 function RedNaoPhone(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
@@ -199,7 +214,7 @@ function RedNaoPhone(options)
 
 function RedNaoAddress(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
@@ -234,194 +249,11 @@ function RedNaoAddress(options)
         }
     }}];
 
-/*
-
-    return [{"name":options.Label+" Street 1","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-    {
-        try{
-            var data=GetObjectOrNull(rowObject,cellOptions);
-            if(data==null)
-                return '';
-
-            var appendAddressElement=function(address,element){
-                if(element==""||typeof element=='undefined')
-                    return address;
-
-                if(address=="")
-                    address=element;
-                else
-                    address+=", "+element;
-
-                return address;
-
-            }
-
-            var address="";
-            address=appendAddressElement(address,data.streetAddress1);
-            return address;
-        }catch(exception)
-        {
-            return '';
-        }
-    }},
-        {"name":options.Label+" Street 2","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-        {
-            try{
-                var data=GetObjectOrNull(rowObject,cellOptions);
-                if(data==null)
-                    return '';
-
-                var appendAddressElement=function(address,element){
-                    if(element==""||typeof element=='undefined')
-                        return address;
-
-                    if(address=="")
-                        address=element;
-                    else
-                        address+=", "+element;
-
-                    return address;
-
-                }
-
-                var address="";
-                address=appendAddressElement(address,data.streetAddress2);
-                return address;
-            }catch(exception)
-            {
-                return '';
-            }
-        }}
-        ,
-
-        {"name":options.Label+" City","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-        {
-            try{
-                var data=GetObjectOrNull(rowObject,cellOptions);
-                if(data==null)
-                    return '';
-
-                var appendAddressElement=function(address,element){
-                    if(element==""||typeof element=='undefined')
-                        return address;
-
-                    if(address=="")
-                        address=element;
-                    else
-                        address+=", "+element;
-
-                    return address;
-
-                }
-
-                var address="";
-                address=appendAddressElement(address,data.city);
-                return address;
-            }catch(exception)
-            {
-                return '';
-            }
-        }},
-
-
-        {"name":options.Label+" State","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-        {
-            try{
-                var data=GetObjectOrNull(rowObject,cellOptions);
-                if(data==null)
-                    return '';
-
-                var appendAddressElement=function(address,element){
-                    if(element==""||typeof element=='undefined')
-                        return address;
-
-                    if(address=="")
-                        address=element;
-                    else
-                        address+=", "+element;
-
-                    return address;
-
-                }
-
-                var address="";
-                address=appendAddressElement(address,data.state);
-
-                return address;
-            }catch(exception)
-            {
-                return '';
-            }
-        }},
-
-
-        {"name":options.Label+" Zip","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-        {
-            try{
-                var data=GetObjectOrNull(rowObject,cellOptions);
-                if(data==null)
-                    return '';
-
-                var appendAddressElement=function(address,element){
-                    if(element==""||typeof element=='undefined')
-                        return address;
-
-                    if(address=="")
-                        address=element;
-                    else
-                        address+=", "+element;
-
-                    return address;
-
-                }
-
-                var address="";
-                address=appendAddressElement(address,data.zip);
-
-                return address;
-            }catch(exception)
-            {
-                return '';
-            }
-        }},
-
-
-        {"name":options.Label+" Country","index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
-        {
-            try{
-                var data=GetObjectOrNull(rowObject,cellOptions);
-                if(data==null)
-                    return '';
-
-                var appendAddressElement=function(address,element){
-                    if(element==""||typeof element=='undefined')
-                        return address;
-
-                    if(address=="")
-                        address=element;
-                    else
-                        address+=", "+element;
-
-                    return address;
-
-                }
-
-                var address="";
-                address=appendAddressElement(address,data.country);
-
-                return address;
-            }catch(exception)
-            {
-                return '';
-            }
-        }}
-
-    ];*/
 }
 
 function RedNaoFileUploadColumn(options)
 {
-    return [{"name":options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
+    return [{"name":options.Id,label:options.Label,"index":options.Id,formatter: function (cellvalue, cellOptions, rowObject)
     {
         try{
             var data=GetObjectOrNull(rowObject,cellOptions);
