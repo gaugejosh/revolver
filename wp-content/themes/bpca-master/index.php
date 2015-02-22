@@ -57,9 +57,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-                    <div>&nbsp;</div>
                     <div class="main-image" style="margin-bottom: -8px">
-                        <img src="<?=$homepagefull;?>" />
+                        <img src="<?php $homepagefull; ?>" />
                            <div class="main-image-link">
                                <div class="main-image-link-text">
                                    <a href="/about-2/who-we-are">
@@ -179,7 +178,7 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="main-row-2-col-2">
-                            <img src="<?=$homepage800;?>" />
+                            <img src="<?php $homepage800;?>" />
                             <div class="building-image-link">
                                <div class="building-image-link-text">
                                    <a href="/residential-life/buildings?leed=yes">

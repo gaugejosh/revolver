@@ -2315,8 +2315,8 @@ ul#menu-resource-links {
 .link-dir-area-white input[type="submit"],
 .link-dir-area-black input[type="submit"],
 .cat-button {
-    font-family:    "Proxima Nova - SemiBold";
-    background:     none repeat scroll 0% 0% transparent;
+    font-family:    'Proxima Nova - SemiBold', sans-serif;
+    background:     none repeat scroll 0 0 transparent;
     border-radius:  0;
     box-shadow:     none;
     font-size:      15px;
@@ -2600,9 +2600,8 @@ div#page-quote-yellow {
 #cat-box-blog {
     float:       right;
     margin-left: 10px;
-    padding:     0.5px 20px 0.5px 2px;
+    padding:     1px 20px 1px 2px;
     width:       110px;
-    margin-top:  4px;
     margin-top:  4px;
 }
 
@@ -2753,7 +2752,7 @@ div#page-quote-yellow {
     font-family: 'Proxima Nova - Bold', sans-serif;
     float:       left;
     font-size:   16px;
-    margin-left: 165px;
+    /*margin-left: 165px;*/
     padding:     20px;
     margin-left: 0;
 }
@@ -2909,10 +2908,7 @@ div#page-quote-yellow {
     zoom:                  1;
     background:            #dad9d7;
     *display:              inline;
-    border:                solid 1px #f1f0ef;
-    border-bottom:         none;
-    border-top:            none;
-    border-left:           none;
+    border-right:          solid 1px #f1f0ef;
     height:                50px;
     width:                 15%;
     text-align:            center;
@@ -2940,7 +2936,7 @@ div#page-quote-yellow {
 }
 
 .press-tab.active {
-    background-color: #fff;
+    /*background-color: #fff;*/
     background-color: #696a6c;
     color:            #fff;
 }
@@ -3035,17 +3031,16 @@ div#page-quote-yellow {
 .constantcontactwidget_form input[type="text"] {
     border-style: none none solid !important;
     width:        250px !important;
-    background:   none repeat scroll 0% 0% transparent !important;
+    background:   none repeat scroll 0 0 transparent !important;
     text-align:   center !important;
 }
 
 .news-button input[type="submit"],
 .constantcontactwidget_form input[type="submit"] {
-    border-style:   solid !important;
-    font-family:    "Proxima Nova - SemiBold" !important;
+    border:         1px solid #000 !important;
+    font-family:    'Proxima Nova - SemiBold', sans-serif !important;
     color:          #000 !important;
-    background:     none repeat scroll 0% 0% transparent !important;
-    border-color:   #000 !important;
+    background:     none repeat scroll 0 0 transparent !important;
     border-radius:  0 !important;
     box-shadow:     none !important;
     font-size:      15px !important;
@@ -3054,7 +3049,6 @@ div#page-quote-yellow {
     text-shadow:    none !important;
     vertical-align: middle !important;
     text-transform: uppercase !important;
-    border-width:   1px !important;
     margin-top:     20px !important;
 }
 
@@ -3082,37 +3076,30 @@ div#page-quote-yellow {
 
 .news-button-foot input[type="submit"],
 .social-block-slider input[type="submit"] {
-    border-style:   solid;
     font-family:    'Proxima Nova - SemiBold', sans-serif;
     color:          #000;
     background:     none;
-    border-color:   #000;
     border-radius:  0;
     box-shadow:     none;
     font-size:      15px;
-    font-size:      1.2rem;
     line-height:    1;
-    padding:        .6em 1em .4em;
     padding:        5px 15px;
     text-shadow:    none;
     vertical-align: middle;
     margin-left:    -4px;
     text-transform: uppercase;
-    border-width:   1px;
+    border:         1px solid #000;
 }
 
 .news-button-tease input[type="submit"] {
-    border-style:   none;
+    border:         0 solid #000;
     font-family:    'Proxima Nova', sans-serif;
     color:          #000;
-    border-color:   #000;
     border-radius:  0;
     box-shadow:     none;
     font-size:      15px;
-    font-size:      1.2rem;
     line-height:    1;
-    padding:        .6em 1em .4em;
-    padding:        1.5px;
+    padding:        1px;
     text-shadow:    none;
     vertical-align: middle;
     margin-left:    -4px;
@@ -3160,7 +3147,6 @@ div#page-quote-yellow {
     overflow:      hidden;
     border-bottom: 1px solid #f1f0ef;
     background:    #fff;
-    overflow:      hidden;
 }
 
 .event-image-area {
@@ -3230,13 +3216,13 @@ div#page-quote-yellow {
 }
 
 .descr-text-box-container.events-page {
-    font-family: 'Proxima Nova - Light' !important;
+    font-family: 'Proxima Nova - Light', sans-serif !important;
     background:  #19a6e2;
     padding:     0;
 }
 
 .descr-text-box-container.places {
-    font-family: 'Proxima Nova - Light' !important;
+    font-family: 'Proxima Nova - Light', sans-serif !important;
     background:  #fcd036;
     padding:     0;
 }
@@ -3257,7 +3243,7 @@ div#page-quote-yellow {
 }
 
 .descr-text-4-box.places {
-    font-family:  "Proxima Nova";
+    font-family:  'Proxima Nova', sans-serif;
     float:        right;
     width:        400px;
     margin-top:   -1px;
@@ -3268,7 +3254,7 @@ div#page-quote-yellow {
 .descr-text-event-links-box {
     float:         right;
     height:        100%;
-    font-family:   "Proxima Nova";
+    font-family:   'Proxima Nova', sans-serif;
     padding-right: 20px;
     padding-top:   0;
     text-align:    left;
@@ -3276,21 +3262,11 @@ div#page-quote-yellow {
 }
 
 .descr-text-blue-links-box {
-    font-family:  "Proxima Nova";
+    font-family:  'Proxima Nova', sans-serif;
     float:        right;
     width:        360px;
     margin-right: 80px;
     margin-top:   -20px;
-    /*
-    float: right;
-    height: 100%;
-    font-family: "Proxima Nova";
-    //padding-right: 20px;
-    padding-top: 0;
-    text-align: left;
-    width: 360px;
-    margin-top: -133px;
-    */
 }
 
 .descr-text-blue-links-box.schools {
@@ -3371,16 +3347,13 @@ div#page-quote-yellow {
 }
 
 .download-area {
-    background:     #fff;
-    padding:        2% 0 3% 5%;
-    margin-top:     -30px;
-    padding-left:   60px;
-    padding-bottom: 40px;
-    margin-top:     -25px;
+    background: #fff;
+    padding:    2% 0 40px 60px;
+    margin-top: -25px;
 }
 
 .download-area-community {
-    background:     none repeat scroll 0% 0% #fff;
+    background:     none repeat scroll 0 0 #fff;
     margin-top:     -30px;
     margin-left:    30px;
     padding-left:   37px;
@@ -3410,7 +3383,6 @@ div#page-quote-yellow {
 
 .archive-options {
     float:         left;
-    margin-top:    10px;
     width:         100%;
     margin-left:   550px;
     margin-top:    -80px;
@@ -3562,18 +3534,15 @@ div#page-quote-yellow {
 }
 
 .archive-tab {
-    float:         left;
-    display:       inline-block;
-    zoom:          1;
-    background:    #dad9d7;
-    *display:      inline;
-    border:        solid 1px #f1f0ef;
-    border-bottom: none;
-    border-top:    none;
-    border-left:   none;
-    height:        50px;
-    width:         250px;
-    text-align:    center;
+    float:        left;
+    display:      inline-block;
+    zoom:         1;
+    background:   #dad9d7;
+    *display:     inline;
+    border-right: solid 1px #f1f0ef;
+    height:       50px;
+    width:        250px;
+    text-align:   center;
 }
 
 @media screen and (min-width: 769px) {
@@ -3848,7 +3817,7 @@ div#page-quote-yellow {
 
 .redNaoLegend {
     border:      none !important;
-    font-family: 'Proxima Nova - SemiBold' !important;
+    font-family: 'Proxima Nova - SemiBold', sans-serif !important;
     font-size:   16px !important;
     margin-top:  20px;
 }
@@ -3875,7 +3844,7 @@ div#page-quote-yellow {
     background:         rgba(0, 255, 255, 0.5);
     -moz-transition:    all .3s linear;
     -webkit-transition: all .3s linear;
-    -ms-transition:     all .3s linear;
+    /*-ms-transition:     all .3s linear;*/
     -o-transition:      all .3s linear;
     transition:         all .3s linear;
 }
@@ -4024,19 +3993,17 @@ div#page-quote-yellow {
 }
 
 .prev-page-link {
-    width:               13px;
-    height:              24px;
-    margin:              auto;
-    background-image:    url(images/arrow_left.jpg);
-    background-position: 0 100%;
+    width:      13px;
+    height:     24px;
+    margin:     auto;
+    background: url('images/arrow_left.jpg') 0 100%;
 }
 
 .next-page-link {
-    width:               13px;
-    height:              24px;
-    margin:              auto;
-    background-image:    url(images/arrow_right.jpg);
-    background-position: 0 100%;
+    width:      13px;
+    height:     24px;
+    margin:     auto;
+    background: url('images/arrow_right.jpg') 0 100%;
 }
 
 /* CONTENT SLIDER */
@@ -4081,7 +4048,6 @@ div#page-quote-yellow {
     position:            relative;
     border:              none;
     background:          url('images/arrow_left.jpg') no-repeat;
-    background-position: 0 100%;
     margin-left:         9px;
     width:               13px;
     height:              24px;
@@ -4090,8 +4056,7 @@ div#page-quote-yellow {
 .nextbtn {
     position:            relative;
     border:              none;
-    background:          url('images/arrow_right.jpg') no-repeat;
-    background-position: 0 100%;
+    background:          url('images/arrow_right.jpg') 0 100% no-repeat;
     width:               13px;
     height:              24px;
     margin-right:        9px;
@@ -4126,20 +4091,15 @@ div#page-quote-yellow {
 }
 
 .pagi-container > ul li {
-    /* float:left; ** Instead write "display:inline-block" Property to set the pagi-elements in center. */
     list-style:     none;
-    padding:        0; /* Setting padding as zero will increase clickable region of child('a' Anchor Element) of LI element */
-    border:         1px solid grey;
-    margin:         0 auto;
-    display:        inline-block;
-    background:     radial-gradient(rgba(255, 255, 255, 0.8) 50%, rgba(180, 180, 180, 0.8));
+    padding:        0;
     display:        inline-block;
     margin:         0 3px;
     width:          10px;
     height:         10px;
     border-radius:  5px;
-    border:         2px solid;
-    background:     none repeat scroll 0% 0% #000;
+    border:         2px solid grey;
+    background:     none repeat scroll 0 0 #000;
     vertical-align: top;
     font-size:      0;
     line-height:    0;
@@ -4206,26 +4166,21 @@ div#page-quote-yellow {
 }
 
 .website-img-swap {
-    float:               left;
-    width:               30px;
-    height:              20px;
-    margin:              auto;
-    background-image:    url(images/stacked_website_icon.png);
-    background-size:     30px 40px;
-    background-repeat:   no-repeat;
-    background-position: 0 0;
+    float:           left;
+    width:           30px;
+    height:          20px;
+    margin:          auto;
+    background:      url('images/stacked_website_icon.png') 0 0 no-repeat;
+    background-size: 30px 40px;
 }
 
 .website-img-swap-black {
-    float:               left;
-    width:               30px;
-    height:              20px;
-    margin:              auto;
-    background-image:    url(images/black_stacked_website_icon.png);
-    background-size:     30px 40px;
-    background-repeat:   no-repeat;
-    background-position: 0 0;
-    margin-top:          4px;
+    float:           left;
+    width:           30px;
+    height:          20px;
+    margin:          4px auto;
+    background:      url('images/black_stacked_website_icon.png') 0 0 no-repeat;
+    background-size: 30px 40px;
 }
 
 .website-img-swap:hover,
@@ -4382,7 +4337,7 @@ input[type="checkbox"] {
     clear:      both;
     height:     14px;
     width:      14px;
-    background: none repeat scroll 0% 0% transparent;
+    background: none repeat scroll 0 0 transparent;
     border:     1px solid #111;
     margin:     4px 5px 0 0;
     position:   relative;
@@ -4400,7 +4355,6 @@ input[type="checkbox"] {
 
 .checker.disabled,
 .sub-checker.disabled {
-    border-color: #a4a5a6;
     border-color: #dad9d7;
 }
 
@@ -4410,7 +4364,7 @@ input[type="checkbox"] {
 
 .checker span,
 .sub-checker span {
-    background:    none repeat scroll 0% 0% transparent;
+    background:    none repeat scroll 0 0 transparent;
     width:         5px;
     height:        5px;
     display:       block;
@@ -4420,7 +4374,7 @@ input[type="checkbox"] {
 }
 
 .checker.big span {
-    background:    none repeat scroll 0% 0% transparent;
+    background:    none repeat scroll 0 0 transparent;
     width:         8px;
     height:        8px;
     display:       block;
@@ -4431,7 +4385,7 @@ input[type="checkbox"] {
 
 .checker span.checked,
 .sub-checker span.checked {
-    background:     none repeat scroll 0% 0% #111;
+    background:     none repeat scroll 0 0 #111;
     pointer-events: auto;
 }
 
@@ -4440,7 +4394,7 @@ input[type="checkbox"] {
 }
 
 .checker.white span.checked {
-    background:     none repeat scroll 0% 0% #fff;
+    background:     none repeat scroll 0 0 #fff;
     pointer-events: auto;
 }
 
@@ -4499,7 +4453,7 @@ input[type="checkbox"] {
 
 .ms-tabs .ms-thumb-frame-selected {
     opacity:    1 !important;
-    background: none repeat scroll 0% 0% rgb(255, 255, 255) !important;
+    background: none repeat scroll 0 0 rgb(255, 255, 255) !important;
 }
 
 .ms-tabs.ms-dir-h.ms-align-top .ms-thumb-frame-selected .ms-thumb-ol {
@@ -4516,7 +4470,6 @@ input[type="checkbox"] {
 .photo-caption-container {
     float:      left;
     width:      400px;
-    height:     100%;
     background: #fcd036;
     overflow:   hidden;
     height:     525px;
@@ -4569,7 +4522,7 @@ a[href^="mailto"] {
 }
 
 .share-email {
-    font-family: 'Proxima Nova - SemiBold' !important;
+    font-family: 'Proxima Nova - SemiBold', sans-serif !important;
     color:       #000 !important;
 }
 
@@ -4593,7 +4546,7 @@ a[href^="mailto"] {
 
 /* EVENTS TEASER */
 .event-tease-date-format {
-    font-family:   "Proxima Nova - SemiBold";
+    font-family:   'Proxima Nova - SemiBold', sans-serif;
     font-size:     18px;
     border-bottom: 2px solid;
     text-align:    right;
@@ -4602,12 +4555,12 @@ a[href^="mailto"] {
 }
 
 .event-tease-head {
-    font-family: "Proxima Nova - SemiBold";
+    font-family: 'Proxima Nova - SemiBold', sans-serif;
     font-size:   20px;
 }
 
 .event-tease-sub-head {
-    font-family: "Proxima Nova";
+    font-family: 'Proxima Nova', sans-serif;
     font-size:   16px;
 }
 
