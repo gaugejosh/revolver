@@ -2315,7 +2315,6 @@ ul#menu-resource-links {
 .link-dir-area-white input[type="submit"],
 .link-dir-area-black input[type="submit"],
 .cat-button {
-    border-style:   solid;
     font-family:    "Proxima Nova - SemiBold";
     background:     none repeat scroll 0% 0% transparent;
     border-radius:  0;
@@ -2326,7 +2325,7 @@ ul#menu-resource-links {
     text-shadow:    none;
     vertical-align: middle;
     text-transform: uppercase;
-    border-width:   1px;
+    border:         1px solid;
 }
 
 .link-dir-area-white input[type="submit"] {
@@ -2589,7 +2588,7 @@ div#page-quote-yellow {
     margin-left:            11px;
     width:                  120px;
     font-size:              14px;
-    letter-spacing:         0.5px;
+    letter-spacing:         1px;
     font-weight:            200;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -2608,14 +2607,11 @@ div#page-quote-yellow {
 }
 
 #cat-box-news {
-    float:          right;
-    margin-left:    10px;
-    padding-right:  20px;
-    padding-left:   2px;
-    padding-bottom: 1px;
-    width:          110px;
-    padding-top:    1px;
-    margin-top:     3px;
+    float:       right;
+    margin-left: 10px;
+    width:       110px;
+    margin-top:  3px;
+    padding:     1px 20px 1px 2px;
 }
 
 .cat-yellow {
