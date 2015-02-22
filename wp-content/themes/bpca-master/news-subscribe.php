@@ -18,15 +18,15 @@ get_header(); ?>
         <div class="blog-container">
             <div id="page-quote-blue">
                 <div class="head-quote-text">
-                &quot;<?php the_field('quote_box');?>&quot;
+                &quot;<?=the_field('quote_box');?>&quot;
             </div>
             <div class="head-quote-attrib">
-                <?php strtoupper(get_field('quote_attrib'));?><br />
-                <?php get_field('quote_title');?>
+                <?=strtoupper(get_field('quote_attrib'));?><br />
+                <?=get_field('quote_title');?>
             </div>
             </div>
             <div class="page-head-img">
-                <?php the_post_thumbnail();?>
+                <?=the_post_thumbnail();?>
             </div>
             <div class="section-title">
                 ALERT SUBSCRIPTIONS

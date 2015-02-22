@@ -2,6 +2,7 @@
 
 /**
 * Template Name: News - Events
+* 
 */
 
 get_header(); 
@@ -49,7 +50,7 @@ if (array_key_exists('filter-by-cat', $_POST)) {
             </div>
         <div class="event-header-area">
             <div class="event-image-area">
-                <?php the_post_thumbnail(); ?>
+                <?=the_post_thumbnail();?>
             </div>
             <div class="mobile-events">
                 <div class="event-filter-area">

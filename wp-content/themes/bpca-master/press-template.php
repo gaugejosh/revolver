@@ -61,7 +61,7 @@ get_header(); ?>
             ?>
             <div class="page-descr-container" id="nobottom">
                 <div class="descr-text-box one-column">
-                    <?php $fulldescrtext;?>
+                    <?=$fulldescrtext;?>
                 </div>
             </div>
             <div class="section-title">

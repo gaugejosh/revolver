@@ -76,11 +76,11 @@ get_header(); ?>
                 $fulldescrtext = apply_filters('the_content', $page_data->post_content);
         ?>
         <div class="section-title">
-                <?php strtoupper(get_field('archive_section_1'));?>
+                <?=strtoupper(get_field('archive_section_1'));?>
         </div>
         <div class="page-descr-container rfp">
             <div class="descr-text-box one-column">
-                <span class="email-black"> <?php $fulldescrtext;?></span>
+                <span class="email-black"> <?=$fulldescrtext;?></span>
             </div>
         </div>
         <div class="foil-container">
@@ -110,7 +110,7 @@ get_header(); ?>
             </div>
         </div>
             <div class="section-title">
-                <?php strtoupper(get_field('archive_section_2'));?>
+                <?=strtoupper(get_field('archive_section_2'));?>
             </div>
             <div id="tab-container-archive">
                 <ul class="archive-tabs main-tabs">
@@ -172,37 +172,37 @@ get_header(); ?>
                                 <a href="#pub-info-cont-1">ALL</a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-2">
-                                <a href="#pub-info-cont-2"><?php $thisyear;?></a>
+                                <a href="#pub-info-cont-2"><?=$thisyear;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-3">
-                                <a href="#pub-info-cont-3"><?php $year1;?></a>
+                                <a href="#pub-info-cont-3"><?=$year1;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-4">
-                                <a href="#pub-info-cont-4"><?php $year2;?></a>
+                                <a href="#pub-info-cont-4"><?=$year2;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-5">
-                                <a href="#pub-info-cont-5"><?php $year3;?></a>
+                                <a href="#pub-info-cont-5"><?=$year3;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-6">
-                                <a href="#pub-info-cont-6"><?php $year4;?></a>
+                                <a href="#pub-info-cont-6"><?=$year4;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-7">
-                                <a href="#pub-info-cont-7"><?php $year5;?></a>
+                                <a href="#pub-info-cont-7"><?=$year5;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-8">
-                                <a href="#pub-info-cont-8"><?php $year6;?></a>
+                                <a href="#pub-info-cont-8"><?=$year6;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-9">
-                                <a href="#pub-info-cont-9"><?php $year7;?></a>
+                                <a href="#pub-info-cont-9"><?=$year7;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-10">
-                                <a href="#pub-info-cont-10"><?php $year8;?></a>
+                                <a href="#pub-info-cont-10"><?=$year8;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-11">
-                                <a href="#pub-info-cont-11"><?php $year9;?></a>
+                                <a href="#pub-info-cont-11"><?=$year9;?></a>
                             </li>
                             <li class="archive-vertical-tab" id="pub-info-tab-12">
-                                <a href="#pub-info-cont-12"><?php $year10;?></a>
+                                <a href="#pub-info-cont-12"><?=$year10;?></a>
                             </li>
                         </ul>
                         <?php
@@ -222,11 +222,11 @@ get_header(); ?>
                             for ($i = 1; $i <= 12; $i++)
                             {
                         ?>
-                               <div class="archive-side-content" id="pub-info-cont-<?php $i;?>">
-                                   <div id="tab-container-pub-info-<?php $i?>">
+                               <div class="archive-side-content" id="pub-info-cont-<?=$i;?>">
+                                   <div id="tab-container-pub-info-<?=$i?>">
                                         <ul class="archive-tabs vertical-tabs">
-                                           <li class="archive-vertical-tab mobile" id="pub-info-<?php $i;?>-tab-1">
-                                                <a href="#pub-info-<?php $i;?>-cont-1">ALL</a>
+                                           <li class="archive-vertical-tab mobile" id="pub-info-<?=$i;?>-tab-1">
+                                                <a href="#pub-info-<?=$i;?>-cont-1">ALL</a>
                                            </li> 
                         <?php
                                         // loop through the categories and build the tabs for those
@@ -429,7 +429,7 @@ get_header(); ?>
                              <?php echo "<br />" . $thisdescr;?>
                         </div>
                         <div class="archive-share-buttons">
-                          <a href="#" onclick="javascript:downloadfile('<?php $imgdata[0]->img;?>');"><div class="social-icon"><i class="fa fa-share-square-o"></i></div><div class="share-text-black">Download</div></a><br />
+                          <a href="#" onclick="javascript:downloadfile('<?=$imgdata[0]->img;?>');"><div class="social-icon"><i class="fa fa-share-square-o"></i></div><div class="share-text-black">Download</div></a><br />
          <a href="https://www.facebook.com/sharer/sharer.php?u='<?php echo $imgdata[0]->img;?>">
          <div class="social-icon"><i class="fa fa-facebook"></i></div><div class="share-text-black">Share on Facebook</div>
          </a><br />
@@ -734,7 +734,7 @@ foreach ($pageddivs as $newpage) {
     $finditemnum = explode("-", $newpage);
     $itemnum = $finditemnum[2];
 ?>
-setPagination(<?php $itemnum;?>);
+setPagination(<?=$itemnum;?>);
 <?php
 }
 ?>

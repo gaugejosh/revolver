@@ -15,7 +15,8 @@ get_header(); ?>
 				bcn_display();
 			}
 			?>
-		</div><!-- .breadcrumbs -->
+		</div>
+		<!-- .breadcrumbs -->
 
 		<div class="about-leaders">
 			<ul class="leaders">
@@ -31,9 +32,13 @@ get_header(); ?>
 				// instantiate new WP_Query object
 				$loop = new WP_Query($args);
 
+				// create iterator for expanded content
+				$i = 1;
+
 				// start ze loop!
 				while ($loop->have_posts()) : $loop->the_post();
 					?>
+
 					<li class="leader">
 						<div class="leader-content">
 							<div class="leader-info">
@@ -42,26 +47,46 @@ get_header(); ?>
 									<li><?php the_field('position_title') ?></li>
 									<li><?php the_field('confirmed_on') ?></li>
 								</ul>
-							</div><!-- .leader-info -->
+							</div>
+							<!-- .leader-info -->
+
 							<div class="leader-image">
 								<?php the_post_thumbnail() ?>
-							</div><!-- .leader-image -->
+							</div>
+							<!-- .leader-image -->
+
 							<div class="leader-button"></div>
-						</div><!-- .leader-content -->
+						</div>
+						<!-- .leader-content -->
+
 						<div class="leader-description">
 							<div class="left-col">
 								<p><?php the_field('bio_column_1') ?></p>
-							</div><!-- .left-col -->
+							</div>
+							<!-- .left-col -->
 							<div class="right-col">
 								<p><?php the_field('bio_column_2') ?></p>
-							</div><!-- .right-col -->
-						</div><!-- .leader-description -->
+							</div>
+							<!-- .right-col -->
+						</div>
+						<!-- .leader-description -->
 					</li>
+
+					<?php // insert the description container in the correct place ?>
+					<?php if ($i % 3 === 0): ?>
+						<li class="leader-alt">
+						</li>
+					<?php endif; ?>
+
+					<?php // increment the iterator ?>
+					<?php $i ++; ?>
+
 				<?php endwhile; ?>
 			</ul>
-		</div><!-- .about-leaders -->
+		</div>
+		<!-- .about-leaders -->
 	</main>
-</div>
+</div><!-- #primary -->
 
 <script>
 
@@ -73,12 +98,22 @@ get_header(); ?>
 
 		// setup click action on .leader-button element
 		$leader.on('click', function () {
+			// define some variables
+			var $target = $(this).find('.leader-description').parent().nextAll('.leader-alt:first');
 
-			// show the hidden description field below the image
-			$(this).find('.leader-description').toggle();
-
-			// toggle the active states for the .leader-info and .leader-button
+			// toggle the active class on current element
 			$(this).toggleClass('active');
+
+			// close any open description containers
+			if ($('.leader').not($(this)).hasClass('active')) {
+				$('.leader').removeClass('active');
+			}
+
+			// copy description and append it to container
+			var $content = $(this).find('.leader-description').html();
+
+			// display content
+			$target.html($content).slideToggle();
 
 		});
 

@@ -33,15 +33,15 @@ get_header(); ?>
             }
         ?>
             <div class="head-quote-text">
-                &quot;<?php the_field('quote_box');?>&quot;
+                &quot;<?=the_field('quote_box');?>&quot;
             </div>
             <div class="head-quote-attrib">
-                <?php strtoupper(get_field('quote_attrib'));?><br />
-                <?php get_field('quote_title');?>
+                <?=strtoupper(get_field('quote_attrib'));?><br />
+                <?=get_field('quote_title');?>
             </div>
         </div>
             <div class="page-head-img">
-                <?php the_post_thumbnail();?>
+                <?=the_post_thumbnail();?>
             </div>
             <?php
                 // does the page have a diagram
@@ -49,7 +49,7 @@ get_header(); ?>
                     
             ?>
             <div class="diagram">
-                <img src="<?php the_field('diagram_1');?>" border="0" />
+                <img src="<?=the_field('diagram_1');?>" border="0" />
             </div>
             <?php
                 }
@@ -72,7 +72,7 @@ get_header(); ?>
                 }
                 ?>
                  >
-                <?php strtoupper(get_field('section_title_1'));?>
+                <?=strtoupper(get_field('section_title_1'));?>
             </div>
             <div class="page-descr-container"
                  <?php
@@ -93,7 +93,7 @@ get_header(); ?>
                 <?php
                 }
                 ?>
-                        <?php $fulldescrtext;?>
+                        <?=$fulldescrtext;?>
                 </div>
             </div>
             <?php
@@ -116,7 +116,7 @@ get_header(); ?>
                     
             ?>
             <div class="section-title">
-                <?php strtoupper(get_field('section_title_2'));?>
+                <?=strtoupper(get_field('section_title_2'));?>
             </div>
             <?php
                 }
@@ -125,7 +125,7 @@ get_header(); ?>
                     
             ?>
             <div class="diagram">
-                <img src="<?php the_field('diagram_2');?>" border="0" />
+                <img src="<?=the_field('diagram_2');?>" border="0" />
             </div>
         <?php
                 }
